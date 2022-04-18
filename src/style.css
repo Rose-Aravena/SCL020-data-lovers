@@ -8,3 +8,13 @@ h1{
     font-family: 'Hina Mincho', serif;
 
     }
+
+.index {
+    background-image: 'INDEX.jpeg';
+    background-size: cover ;
+}
+
+.menu{
+    background-image: 'MENU.png';
+    background-size: cover ;
+}
