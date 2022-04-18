@@ -1,3 +1,37 @@
-h1 {
-font-family: "HARRYP__.TTF" ;    
+
+h1{
+    font-family: 'Harry Potter', sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    color: burlywood; 
+    display: flex;
+    justify-content: center;
+    margin-top: 235px;
+    text-shadow: 2px 2px 3px black;
+}
+
+.alohomoraB{
+    background-color: burlywood;
+    font-family: 'Hina Mincho', serif;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 8px 25px;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 20px;
+    text-shadow: 1px 1px 2px black;
+    margin: 30;
+  }
+
+#index{
+    background-image: url('INDEX.png');
+    background-size: cover ;
+}
+
+#menu{
+    background-image: url('MENU.png');
+    background-size: cover ;
 }
