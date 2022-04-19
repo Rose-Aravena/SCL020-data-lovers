@@ -42,9 +42,9 @@ h1{
     background-image: url('MENU.png');
     background-size: cover ;
     background-attachment: fixed;
-    
     background-position: center;
 }
+
 #root{
     background-image: url('carta (1).png');
     position: absolute;
@@ -71,4 +71,3 @@ h1{
     margin-top: 100px;
     text-shadow: 2px 2px 3px silver;
 }
-
