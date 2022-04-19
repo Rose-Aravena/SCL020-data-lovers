@@ -36,5 +36,5 @@ para tener un conocimiento general del mundo de HP
 * Comenzamos seleccionando imágenes y paletas de colores.
 * A través de la encuesta que realizamos logramos decidir la idea de la interfaz y la información principal que queremos mostrar.
 * Continuamos haciendo un diagrama de flujo para saber los filtros, botones y pantallas dieferentes que necesitamos.
-
+* Aplicamos los fondos de las dos primeras html y agregamos título y botón de inicio al index.
 
