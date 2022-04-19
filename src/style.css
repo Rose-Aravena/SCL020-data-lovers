@@ -32,10 +32,40 @@ h1{
 #index{
     background-image: url('INDEX.png');
     background-size: cover ;
+
+    background-attachment: fixed;
+    
+    background-position: center;
+}
+
+#menu{
+    background-image: url('MENU.png');
+    background-size: cover ;
+    background-attachment: fixed;
+    
+    background-position: center;
+}
+#root{
+    background-image: url('carta (1).png');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 900px;
+    height: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+
     background-position: center;
     background-attachment: fixed;
 }
 
+<<<<<<< HEAD
 #menu{
     background-image: url('COMEDOR2.jpg');
     background-size: cover;
@@ -46,3 +76,7 @@ h1{
 #root{
 
 }
+=======
+
+
+>>>>>>> 3978789246509db6b22f7c8cf23cd1bff6b71383
