@@ -42,27 +42,32 @@ h1{
     background-image: url('MENU.png');
     background-size: cover ;
     background-attachment: fixed;
-    
     background-position: center;
 }
+
 #root{
     background-image: url('carta (1).png');
-    background-position: center;
+    position: absolute;
     background-repeat:no-repeat;
-    background-size: cover;
-    width: 900px;
-    height: 1500px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    background-size:cover;
     display:flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
     justify-content: center;
-
-    
+    background-attachment:fixed;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: 1024px;
+    height: 800px;
+    margin-top: 200px;
 }
 
-
-
+.characters{
+    display:inline-table;
+    line-height: 200px;
+    text-align: center;
+    color: black;
+    margin-top: 100px;
+    text-shadow: 2px 2px 3px silver;
+}
