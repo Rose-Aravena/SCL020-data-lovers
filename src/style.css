@@ -5,6 +5,8 @@ h1{
     font-size: 70px;
     color: burlywood; 
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: center;
     margin-top: 235px;
     text-shadow: 2px 2px 3px black;
@@ -14,6 +16,7 @@ h1{
     background-color: burlywood;
     font-family: 'Hina Mincho', serif;
     display: flex;
+    flex-wrap: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
@@ -29,9 +32,13 @@ h1{
 #index{
     background-image: url('INDEX.png');
     background-size: cover ;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 #menu{
-    background-image: url('MENU.png');
-    background-size: cover ;
+    background-image: url('COMEDOR2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
