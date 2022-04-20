@@ -10,3 +10,5 @@ if (alohomoraB) {
     window.location.href = "menu.html";
     });
   }
+
+  
