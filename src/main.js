@@ -1,12 +1,13 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/harrypotter/data.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+// import { example } from './data.js';
+// // import data from './data/lol/lol.js';
+// import data from './data/harrypotter/harry.js';
+// // import data from './data/rickandmorty/rickandmorty.js';
+// console.log(example, data);
 
-console.log(example, data);
+const alohomoraButton = document.getElementById('alohomoraB');
 
-if (alohomoraB) {
-    alohomoraB.addEventListener("click", function () {
+if (alohomoraButton) {
+    alohomoraButton.addEventListener("click", function () {
     window.location.href = "menu.html";
     });
   }
