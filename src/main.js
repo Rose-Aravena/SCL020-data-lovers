@@ -10,4 +10,9 @@ if (alohomoraButton) {
     });
   }
 
+  const root = document.getElementById('root');
 
+  const lista = document.createElement('ul');
+  
+  lista.textContent = 'CHARACTERS';
+  root.appendChild (lista);
