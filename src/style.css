@@ -12,7 +12,7 @@ h1{
     text-shadow: 2px 2px 3px black;
 }
 
-.alohomoraB{
+.alohomoraButton{
     background-color: burlywood;
     font-family: 'Hina Mincho', serif;
     display: flex;
@@ -32,9 +32,7 @@ h1{
 #index{
     background-image: url('INDEX.png');
     background-size: cover ;
-
     background-attachment: fixed;
-    
     background-position: center;
 }
 
