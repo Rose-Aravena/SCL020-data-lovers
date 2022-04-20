@@ -3,30 +3,68 @@ h1{
     font-family: 'Harry Potter', sans-serif;
     font-weight: 400;
     font-size: 70px;
-    color: burlywood; 
+    letter-spacing: 5px;
+    color: #D4A571; 
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 235px;
-    text-shadow: 2px 2px 3px black;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px #CE6C49, 0 0 15px #CE6C49, 0 0 20px #CE6C49, 0 0 30px #CE6C49; 
+    
 }
 
+.neon{
+    padding: 10px;
+    animation: parpadear 2s infinite ;
+}
+.neon1{
+    padding: 10px;
+    animation: parpadear 2.1s infinite ;
+}
+.neon2{
+    padding: 10px;
+    animation: parpadear 2.2s infinite ;
+}
+.neon3{
+    padding: 10px;
+    animation: parpadear 2.3s infinite ;
+}
+.neon4{
+    padding: 10px;
+    animation: parpadear 2.4s infinite ;
+}
+    @keyframes parpadear {
+        to{
+           text-shadow: none
+        }
+        
+    }
+    
+
+
 .alohomoraButton{
-    background-color: burlywood;
+    background-color: rgba(196, 202, 198, 3%);
     font-family: 'Hina Mincho', serif;
+    letter-spacing: 5px;
     display: flex;
     flex-wrap: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    padding: 8px 25px;
+    padding: 5px 25px;
     text-align: center;
     font-size: 35px;
     border-radius: 20px;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 0 0 5px rgb(66, 194, 255), 0 0 15px rgb(133, 244, 255), 0 0 20px rgb(184, 255, 249), 0 0 40px rgb(239, 255, 253);
     margin: 30;
+    border-color: rgba(196, 202, 198, 10%);
+    animation: parpadear 2s infinite ;
+    
+  }
+  .alohomoraButton:hover{
+      background: rgba(66, 194, 255, 30%);
   }
 
 #index{
@@ -43,8 +81,8 @@ h1{
     background-position: center;
 }
 
-#root{
-    background-image: url('carta (1).png');
+/* #root{
+   background-image: url('carta (1).png');
     position: absolute;
     background-repeat:no-repeat;
     background-size:cover;
@@ -59,13 +97,25 @@ h1{
     width: 1024px;
     height: 800px;
     margin-top: 200px;
+    border-radius: 15px;
+}*/
+
+img{
+    width: 100%;
+    max-width: 1000px;
+    display:flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
 }
 
 .characters{
-    display:inline-table;
+    display:flex;
     line-height: 200px;
     text-align: center;
-    color: black;
+    color: #EBA83A;
     margin-top: 100px;
-    text-shadow: 2px 2px 3px silver;
+    text-shadow: 2px 2px 5px silver;
 }
