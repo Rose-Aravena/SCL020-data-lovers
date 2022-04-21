@@ -112,3 +112,22 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.foot{
+    display:flex;
+    text-align: end;
+    color: #ffffff;
+    font-family: 'Hina Mincho', serif;
+    font-weight: 400;
+    font-size: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: baseline;
+    margin-top: 10%;
+  
+}
+
+.audio{
+    opacity: 0;
+
+}
