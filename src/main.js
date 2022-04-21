@@ -1,6 +1,9 @@
-// import lista from './data.js';
-// // import harry from './data/harrypotter/harry.js';
+import characters from './data.js';
+
+//import harry from './data/harrypotter/harry.js';
 // // import data from './data/rickandmorty/rickandmorty.js';
+
+
 
 const alohomoraButton = document.getElementById('alohomoraB');
 
@@ -10,9 +13,10 @@ if (alohomoraButton) {
     });
   }
 
+
   const root = document.getElementById('root');
 
   const lista = document.createElement('ul');
   
-  lista.textContent = 'CHARACTERS';
+  lista.textContent = `${characters}`;
   root.appendChild (lista);
