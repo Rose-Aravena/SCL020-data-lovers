@@ -81,7 +81,7 @@ h1{
     background-position: center;
 }
 
-/* #root{
+#root{
    background-image: url('carta (1).png');
     position: absolute;
     background-repeat:no-repeat;
@@ -98,24 +98,17 @@ h1{
     height: 800px;
     margin-top: 200px;
     border-radius: 15px;
-}*/
-
-img{
-    width: 100%;
-    max-width: 1000px;
-    display:flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    
-    
 }
 
-.characters{
+#title{
     display:flex;
-    line-height: 200px;
-    text-align: center;
+    text-align: start;
     color: #EBA83A;
-    margin-top: 100px;
+    margin-top: 5%;
     text-shadow: 2px 2px 5px silver;
+    font-family: 'Harry Potter', sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
