@@ -2,11 +2,18 @@ import data from './data/harrypotter/harry.js';
 
 let characters = data.characters;
 
+
+const result = characters.filter(character => character.house === 'Gryffindor')
+
+console.log('Result', result);
+
 characters.forEach(function(character){
 const cardContainer = document.getElementById('cardContainer');
 const list = document.createElement('h2');
-const house = document.createElement('h3')
-const birth = document.createElement('h4')
+const house = document.createElement('h3');
+const birth = document.createElement('h4');
+const wand = document.createElement('h5');
+const patronus =document.createElement('h6');
 
 list.classList.add("list");
   list.textContent = character.name;
@@ -17,11 +24,42 @@ list.classList.add("list");
 
   birth.textContent = character.birth;
   cardContainer.appendChild (birth);
+
+  wand.textContent = character.wand;
+  cardContainer.appendChild (wand);
+
+  patronus.textContent = character.patronus;
+  cardContainer.appendChild (patronus);
   
-})
+});
+
+// const sorts = characters.sort((a,b)=>a-b);
+
+// console.log('Sorts', sorts);
+let spells = data.spells;
+
+let potions = data.potions;
+
+let books = data.books;
+
+let funFacts = data.funFacts;
 
 
+// const cursor = document.querySelector('cursor');
 
+// const addEventListeners = () => {
+//   document.addEventListener("mousemove", onMouseMove);
+// };
+
+// const onMouseMove = (e) => {
+//   // https://css-tricks.com/updating-a-css-variable-with-javascript/
+//   cursor.style.setProperty('--cursor-x', e.clientX + "10px");
+//   cursor.style.setProperty('--cursor-y', e.clientY + "10px");
+// };
+
+// document.addEventListener('mousemove', e =>{
+// cursor.setAttribute("syle", "top: " + (e.pageY -10) + "px; left: "+  (e.pageX -15) + "px;");
+// })
 
 // const flipCard = document.createElement("div");
 // let name = Array.from(characters);
