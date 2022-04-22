@@ -1,4 +1,4 @@
-import characters from './data.js';
+//import characters from './data.js';
 
 //import harry from './data/harrypotter/harry.js';
 // // import data from './data/rickandmorty/rickandmorty.js';
