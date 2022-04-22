@@ -82,21 +82,23 @@ h1{
 }
 
 #root{
-   background-image: url('carta (1).png');
+    background-image: url('carta (1).png');
     position: absolute;
-    background-repeat:no-repeat;
-    background-size:cover;
-    display:flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
     justify-content: center;
-    background-attachment:fixed;
+    /* background-attachment: fixed; */
     align-items: center;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    left: 0;
+    right: 0;
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* -webkit-transform: translate(-50%, -50%); */
     width: 1024px;
     height: 800px;
-    margin-top: 200px;
+    /* margin-top: 200px; */
     border-radius: 15px;
 }
 
