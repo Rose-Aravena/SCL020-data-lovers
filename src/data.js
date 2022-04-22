@@ -1,22 +1,47 @@
 import data from './data/harrypotter/harry.js';
 
 let characters = data.characters;
+
+characters.forEach(function(character){
+const cardContainer = document.getElementById('cardContainer');
+const list = document.createElement('h2');
+const house = document.createElement('h3')
+const birth = document.createElement('h4')
+
+list.classList.add("list");
+  list.textContent = character.name;
+  cardContainer.appendChild (list);
+  
+  house.textContent = character.house;
+  cardContainer.appendChild (house);
+
+  birth.textContent = character.birth;
+  cardContainer.appendChild (birth);
+  
+})
+
+
+
+
+// const flipCard = document.createElement("div");
 // let name = Array.from(characters);
+// console.log(characters[10])
 
-console.log(characters[10])
 
 
-  characters.forEach(function(character){
-      //console.log(character)
-      const root = document.getElementById('root');
-      const lista = document.createElement('h2');
-      lista.textContent = character.name;
-      root.appendChild (lista);
+//  function createCard(char) {
+//   flipCard.classList.add("flip-card");
+      
+//   cardContainer.classList.add("cardContainer");
+//   flipCard.appendChild(cardContainer);
+//   }
+        //console.log(character)
 
-      const p = document.createElement('p');
-      p.textContent = character.house;
-      root.appendChild (p);
-  })
+
+      // const p = document.createElement('p');
+
+
+
 
 //const mapCharacters = Object.keys(characters.map(key =>
   //  {
@@ -118,4 +143,3 @@ console.log(characters[10])
 // export const anotherExample = () => {
 //   return 'OMG';
 // };
-
