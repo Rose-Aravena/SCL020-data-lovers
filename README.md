@@ -1,6 +1,6 @@
-#DATA LOVERS
+# DATA LOVERS
 
-##INTRODUCCIÓN
+## INTRODUCCIÓN
 
 Tema: Harry Potter
 
@@ -18,7 +18,7 @@ Usuario:
 * Fans de películas.
 
 
-##HISTORIAS DE USUARIO
+## HISTORIAS DE USUARIO
 * yo como fan veterano de HP
 quiero datos poco comunes
 para profundizar mas en el mundo de HP
@@ -27,14 +27,18 @@ para profundizar mas en el mundo de HP
 quiero datos que salen en los libros
 para tener un conocimiento general del mundo de HP
 
-##DIAGRAMA DE FLUJO
+## DIAGRAMA DE FLUJO
 
 <img src = "DATA LOVERS.drawio.png">
 
-##DESARROLLO
+## DESARROLLO
 
 * Comenzamos seleccionando imágenes y paletas de colores.
 * A través de la encuesta que realizamos logramos decidir la idea de la interfaz y la información principal que queremos mostrar.
 * Continuamos haciendo un diagrama de flujo para saber los filtros, botones y pantallas dieferentes que necesitamos.
 * Aplicamos los fondos de las dos primeras html y agregamos título y botón de inicio al index.
+* Logramos agregar la data sin filtrado de characters al menu.html.
+* Añadimos un characters.html para trabajar con esa data.
+* A characters.html modificamos elementos de css.
+* A menu.html añadimos botones de las diferentes categorías y linkeamos uno a characters en js.
 

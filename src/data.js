@@ -1,6 +1,7 @@
 
-export default function gryffindor(house){
-  characters.filter(character => character.house === 'Gryffindor')};
+export default function gryffindor(){
+  return characters.filter(character => character.house === 'Gryffindor');
+}
 
 
 // export default function (character)
