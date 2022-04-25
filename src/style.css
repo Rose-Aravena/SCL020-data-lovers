@@ -104,6 +104,7 @@ h1{
     margin-right: auto;
     margin-bottom: 40px;
     margin-top: 20px;
+    text-align: center;
 }
 
 #title{
@@ -127,7 +128,6 @@ h1{
     font-weight: 400;
     font-size: 15px;
     flex-wrap: wrap;
-    justify-content: center;
     justify-content: baseline;
     margin-top: 10%;
   
@@ -138,35 +138,61 @@ h1{
 
 }
 
-.list{
-  /* display: grid;
+/* .list{
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px; */
-  font-family: 'Hina Mincho', serif;
+  gap: 30px;
+  
   display: flex;
   flex-direction:row;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+ 
   margin-bottom: 40px;
   margin-top: 20px;
-}
+  padding: 10px;
+
+}  */
 
 .card{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Hina Mincho', serif;
     display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-flow: row wrap;
     align-items: center;
-    color:black;
-    width: 100%;
-    height: 100%;
+    transition: 0.8s;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    border-radius: 10px;
+    text-align: center;
+    max-height: 350px;
+}
+
+.cardDiv{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Hina Mincho', serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 200px;
+    height: 250px;
     text-align: center;
     transition: 0.8s;
-    transform-style: preserve-3d;
-    margin-top: 650px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgb(100 100 100 / 50%);
+    align-content: center;
+
 }
 
 /* .cursor{
@@ -207,12 +233,9 @@ will-change: transform;
     transform: translateX -15px; */
 
 
-/* .card-container 
-{.flip-card:hover 
-    transform: rotateY(180deg);
-  }
+
   
-  .card-block,
+  /* .card-block,
   .card-block-back {
     width: 100%;
     height: 100%;
