@@ -12,7 +12,12 @@ if (alohomoraButton) {
     });
   }
 
-
+const charactersButton = document.getElementById('charactersB');
+if (charactersButton) {
+    charactersButton.addEventListener("click", function () {
+      window.location.href = "characters.html";
+    });
+  }
 
 import data from './data/harrypotter/harry.js';
   
@@ -68,5 +73,7 @@ import data from './data/harrypotter/harry.js';
     
   });
  
-import gryffindor from './data.js';
-console.log(gryffindor);
+  import gryffindor from './data.js';
+  let result = gryffindor();
+  console.log(result);
+
