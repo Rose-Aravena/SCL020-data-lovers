@@ -1,8 +1,13 @@
+// export const houses = characters.filter(function(gryffindor){
+//   if (characters.house === 'Gryffindor'){
+//   return true
+// }
+// })
 
-export default function gryffindor(){
-  return characters.filter(character => character.house === 'Gryffindor');
+const filterHouse = (characters,house)=>{
+ return characters.filter(character => character.house === house);
 }
-
+export {filterHouse};
 
 // export default function (character)
 // const sorts = characters.sort((a,b)=>a-b);

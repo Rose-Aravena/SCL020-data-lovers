@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body id="characters">
-      <div id="titleChar" >Characters</div>
-      <div id="root" class="root1">
-       <div id="cardContainer" class="card"></div>
-      </div>
+    <div id="titleChar">Characters</div>
+    <label class="filterLabel">Filter by House</label>
+    <select class="houseSelect" id="houseS">
+      <option value="gryffindor">Gryffindor</option>
+      <option value="slytherin">Slytherin</option>
+      <option value="ravenclaw">Ravenclaw</option>
+      <option value="hufflepuff">Hufflepuff</option>
+    </select>
+    <div id="root" class="root1">
+      <div id="cardContainer" class="card"></div>
+    </div>
     <!-- <div class="cursor">
       <div class="cursor__inner"></div>
     </div>   -->

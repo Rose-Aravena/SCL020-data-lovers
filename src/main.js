@@ -2,10 +2,11 @@
 
 //import harry from './data/harrypotter/harry.js';
 // // import data from './data/rickandmorty/rickandmorty.js';
+import data from './data/harrypotter/harry.js';
 
+import {filterHouse} from './data.js';
 
 const alohomoraButton = document.getElementById('alohomoraB');
-
 if (alohomoraButton) {
     alohomoraButton.addEventListener("click", function () {
       window.location.href = "menu.html";
@@ -18,14 +19,19 @@ if (charactersButton) {
       window.location.href = "characters.html";
     });
   }
+  // console.log(filterHouse(data.characters, 'Slytherin'));  
 
-import data from './data/harrypotter/harry.js';
-  
+const houseSelect = document.getElementById('houseS')
+houseSelect.addEventListener("change", function(){
+      // let houseSelect = document.getElementById('houseS').value;
+      const house = houseSelect.options[houseSelect.selectedIndex].text;
+      console.log(filterHouse(data.characters,house));
+    });
 
   let characters = data.characters;
   
   let spells = data.spells;
-  
+
   let potions = data.potions;
   
   let books = data.books;
@@ -73,7 +79,5 @@ import data from './data/harrypotter/harry.js';
     
   });
  
-  import gryffindor from './data.js';
-  let result = gryffindor();
-  console.log(result);
+
 
