@@ -243,7 +243,17 @@ h1{
   .menuButton:hover{
       background: rgba(255, 66, 66, 0.3);
   }
+  
+p{
+    margin: 0.5px;
+    padding: 5px;
+}
 
+h2{
+  margin: 1px; 
+  padding: 5px; 
+  
+}
   
 /* .cursor{
 --size: 20px;
