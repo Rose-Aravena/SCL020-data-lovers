@@ -2,7 +2,7 @@
 h1{
     font-family: 'Harry Potter', sans-serif;
     font-weight: 400;
-    font-size: 70px;
+    font-size: 4.6vw;
     letter-spacing: 5px;
     color: #D4A571; 
     display: flex;
@@ -55,7 +55,7 @@ h1{
     margin-bottom: auto;
     padding: 5px 25px;
     text-align: center;
-    font-size: 35px;
+    font-size: 2.3vw;
     border-radius: 20px;
     text-shadow: 0 0 5px rgb(66, 194, 255), 0 0 15px rgb(133, 244, 255), 0 0 20px rgb(184, 255, 249), 0 0 40px rgb(239, 255, 253);
     margin: 30;
@@ -81,30 +81,89 @@ h1{
     background-position: center;
 }
 
-#root{
+.root1{
     background-image: url('carta (1).png');
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-flow: row;
+    gap: 10px 10px;
+    /* justify-content: center; */
+    /* background-attachment: fixed; */
+    /* align-items: center; */
+    left: 0;
+    right: 0;
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* -webkit-transform: translate(-50%, -50%); */
+    max-width: 700px;
+    max-height: 600px;
+    /* margin-top: 200px; */
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    margin-top: 15px;
+    text-align: center;
+    padding: 30px;
+}
+
+.root2{
+    background-color: rgba(207, 227, 244, 0.235);
+    overflow:scroll;
+    position:absolute;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top ;
     display: flex;
     justify-content: center;
-    /* background-attachment: fixed; */
+    scroll-behavior: auto;
+    /* background-attachment:local; */
     align-items: center;
     left: 0;
     right: 0;
     /* top: 50%; */
     /* transform: translate(-50%, -50%); */
     /* -webkit-transform: translate(-50%, -50%); */
-    width: 1024px;
-    height: 1000px;
+    max-width: 1000px;
+    max-height: 600px;
     /* margin-top: 200px; */
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top:auto;
     text-align: center;
+}
+
+.root3{
+  background-color: rgba(207, 227, 244, 0.235);
+  overflow:scroll;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  /* background-attachment: fixed; */
+  align-items: center;
+  left: 0;
+  right: 0;
+  /* top: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* -webkit-transform: translate(-50%, -50%); */
+  max-width: 1200px;
+  max-height: 2500px;
+  /* margin-top: 200px; */
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top:auto;
+  text-align: center;
 }
 
 #title{
@@ -115,7 +174,7 @@ h1{
     text-shadow: 2px 2px 5px silver;
     font-family: 'Harry Potter', sans-serif;
     font-weight: 400;
-    font-size: 70px;
+    font-size: 4.6vw;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -126,16 +185,18 @@ h1{
     color: #ffffff;
     font-family: 'Hina Mincho', serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1vw;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 35%;
+    padding: 10px;
+    
   
 }
 
 .audio{
     opacity: 0;
-
+    
 }
 
 /* .list{
@@ -163,15 +224,88 @@ h1{
     justify-content: center;
     flex-flow: row wrap;
     align-items: center;
-    transition: 0.8s;
-    margin-top: 50%;
-    margin-bottom: 50%;
+    margin-top: 5%;
+    margin-bottom: 250px;
     border-radius: 10px;
     text-align: center;
-    max-height: 350px;
+    max-height: 180px;
+    max-width: 1000px;
+    padding: 0;
+
 }
 
+.card2{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Hina Mincho', serif;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  transition: 0.8s;
+  margin-top: 20%;
+  margin-bottom: 50%;
+  border-radius: 10px;
+  text-align: center;
+  max-height: 350px;
+  max-width: 1000px;
+}
+
+
 .cardDiv{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Hina Mincho', serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    transition: 0.8s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    align-content: center;
+
+}
+@media only screen and (max-width: 320px) {
+    .cardDiv {
+      height: 60px;
+      width: 40px;
+    }
+  }
+@media only screen and (max-width: 480px) {
+    .cardDiv {
+      height: 100px;
+      width: 80px;
+    }
+  }
+@media only screen and (max-width: 768px) {
+    .cardDiv {
+      height: 140px;
+      width: 110px;
+    }
+  }
+@media only screen and (max-width: 1024px) {
+    .cardDiv {
+      height: 170px;
+      width: 140px;
+    }
+  }
+/* @media only screen and (max-width: 1200px) {
+    .cardDiv {
+      height: 200px;
+      width: 250px;
+    }
+  } */
+
+  .cardDiv2{
     margin-left: 10px;
     margin-right: 10px;
     font-family: 'Hina Mincho', serif;
@@ -200,6 +334,7 @@ h1{
     background-size: cover ;
     background-attachment: fixed;
     background-position: center;
+    overflow: hidden;
 }
 
 #titleChar{
@@ -210,29 +345,41 @@ h1{
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
     font-family: 'Harry Potter', sans-serif;
     font-weight: 400;
-    font-size: 70px;
+    font-size: 4.6vw;
     flex-wrap: wrap;
     justify-content: center;
+}
+#titleSpells{
+  display:flex;
+  text-align: start;
+  color: #b02626;
+  margin-top: 5%;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-family: 'Harry Potter', sans-serif;
+  font-weight: 400;
+  font-size: 4.6vw;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menuButton{
     background-color: rgba(129, 41, 41, 0.653);
     font-family: 'Hina Mincho', serif;
     letter-spacing: 2px;
-    justify-content: center;
-    flex-flow: row wrap;
-    display: flex;
-    align-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* flex-flow: row wrap; */
+    display: grid;
+    /* align-content: center;
+    align-items: center; */
     margin-left: 10px;
     margin-right: 10px;
     margin-top: auto;
     margin-bottom: auto;
     padding: 20px 25px;
-    width: 270px;
+    width: 250px;
     height: 100px;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.8vw;
     border-radius: 20px;
     text-shadow: 0 0 5px rgb(255, 195, 66), 0 0 15px rgb(255, 249, 133), 0 0 20px rgb(255, 234, 184), 0 0 40px rgb(255, 251, 239);
     margin: 20px;
@@ -247,14 +394,107 @@ h1{
 p{
     margin: 0.5px;
     padding: 5px;
+    font-size: 1.1vw;
 }
 
 h2{
   margin: 1px; 
   padding: 5px; 
-  
+  font-size: 1.4vw ;
 }
-  
+
+.filterLabel{
+    color: white;
+    font-size: 1vw;
+    margin-left: 65%;
+    line-height: 1.3;
+}
+.houseSelect{
+  display: block;
+  font-size: 1vw;
+  font-family: 'Hina Mincho', serif;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  line-height: 1.3;
+  padding: .4em 1.4em .3em .8em;
+  width: 400px;
+  margin-left: 72%;
+  max-width: 150px; 
+  box-sizing: border-box;
+  border: 1px solid rgba(201, 2, 2, 0.769);
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+  border-radius: .3em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff; 
+  margin-top: -20px;
+}
+
+.houseSelect::-ms-expand {
+    display: none;
+  }
+.houseSelect:hover {
+    border-color: #888;
+  }
+.houseSelect:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(248, 219, 0, 0.806);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+    outline: none;
+  }
+.houseSelect option {
+    font-weight:normal;
+  }
+
+#spells{
+  background-image: url('Clubduelo.webp');
+  background-size: cover ;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.spellsSelect{
+  display: block;
+  font-size: 1vw;
+  font-family: 'Hina Mincho', serif;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  line-height: 1.3;
+  padding: .4em 1.4em .3em .8em;
+  width: 400px;
+  margin-left: 74.5%;
+  max-width: 150px; 
+  box-sizing: border-box;
+  border: 1px solid rgba(201, 2, 2, 0.769);
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+  border-radius: .3em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff; 
+  margin-top: -20px;
+}
+
+.spellsSelect::-ms-expand {
+    display: none;
+  }
+.spellsSelect:hover {
+    border-color: #888;
+  }
+.spellsSelect:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(248, 219, 0, 0.806);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+    outline: none;
+  }
+.spellsSelect option {
+    font-weight:normal;
+  }
 /* .cursor{
 --size: 20px;
 position: fixed;
