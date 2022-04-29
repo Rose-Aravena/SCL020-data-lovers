@@ -144,26 +144,27 @@ spells.forEach(function (spell) {
 
 
 const spellsSelect = document.getElementById('spellsS')
+
 spellsSelect.addEventListener("change", function () {
+  
+    const type = spellsSelect.options[spellsSelect.selectedIndex].text;
+    const resultSpells = filterSpells(spells, type);
+  console.log(filterSpells(spells, type));
 
-  const type = typeSelect.options[typeSelect.selectedIndex].text;
-
-  const resultSpells = filterSpells(spells, spell_type);
-console.log(filterSpells(spells, type));
 const cardContainer2 = document.getElementById('cardContainer2');
 cardContainer2.innerHTML = '';
-
-  resultSpells.forEach(function (spell) {
-    cardContainer2.innerHTML +=
-      `<div class='cardDiv2'>
-          <h2 class='nameDiv'> ${spell.name}</h2> 
-             <p class='othernameDiv'> Name: ${spell.other_name}</p>
-             <p class='pronunciationDiv'> Pronunciation: ${spell.pronunciation}</p>
-             <p class='spelltypeDiv'> Type: ${spell.spell_type}</p>
-             <p class='descriptionDiv'>Description: ${spell.description}</p>
-        </div>`
+  
+resultSpells.forEach(function (spell) {
+      cardContainer2.innerHTML +=
+        `<div class='cardDiv2'>
+            <h2 class='nameDiv'> ${spell.name}</h2> 
+               <p class='othernameDiv'> Name: ${spell.other_name}</p>
+               <p class='pronunciationDiv'> Pronunciation: ${spell.pronunciation}</p>
+               <p class='spelltypeDiv'> Type: ${spell.spell_type}</p>
+               <p class='descriptionDiv'>Description: ${spell.description}</p>
+          </div>`
+    });
   });
-});
 
 
 
