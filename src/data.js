@@ -12,7 +12,7 @@ const filterHouse = (characters,house)=>{
 const filterSpells = (spells,spell_type)=>{
  return spells.filter(spell => spell.spell_type === spell_type);
 }
-export {filterHouse,filterSpells};
+export {filterHouse, filterSpells};
 // export default function (character)
 // const sorts = characters.sort((a,b)=>a-b);
 
