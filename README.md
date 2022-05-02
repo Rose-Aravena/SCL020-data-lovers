@@ -41,4 +41,9 @@ para tener un conocimiento general del mundo de HP
 * Añadimos un characters.html para trabajar con esa data.
 * A characters.html modificamos elementos de css.
 * A menu.html añadimos botones de las diferentes categorías y linkeamos uno a characters en js.
+* Agregamos filtro de characters por house y logramos hacer que se viera en pantalla.
+* Modificamos algunos aspectos de diseño para mantenerlo más limpio y ordenado.
+* Añadimos spells.html y logramos mostrar la data y filtrado por tipo de spell.
+* Logramos hacer que los textos queden responsive y experimentamos con los demás objetos de css.
+* Actualizamos tareas en trello para ir descartando lo que ya hemos hecho.
 
