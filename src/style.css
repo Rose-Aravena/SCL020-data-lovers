@@ -41,8 +41,6 @@ h1{
         
     }
     
-
-
 .alohomoraButton{
     background-color: rgba(196, 202, 198, 3%);
     font-family: 'Hina Mincho', serif;
@@ -82,274 +80,151 @@ h1{
 }
 
 .root1{
-    background-image: url('carta (1).png');
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-auto-flow: row;
-    gap: 10px 10px;
-    /* justify-content: center; */
-    /* background-attachment: fixed; */
-    /* align-items: center; */
-    left: 0;
-    right: 0;
-    /* top: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* -webkit-transform: translate(-50%, -50%); */
-    max-width: 700px;
-    max-height: 600px;
-    /* margin-top: 200px; */
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 200px;
-    margin-top: 15px;
-    text-align: center;
-    padding: 30px;
-}
-
-.root2{
-    background-color: rgba(207, 227, 244, 0.235);
-    overflow:scroll;
-    position:absolute;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:top ;
-    display: flex;
-    justify-content: center;
-    scroll-behavior: auto;
-    /* background-attachment:local; */
-    align-items: center;
-    left: 0;
-    right: 0;
-    /* top: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* -webkit-transform: translate(-50%, -50%); */
-    max-width: 1000px;
-    max-height: 600px;
-    /* margin-top: 200px; */
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top:auto;
-    text-align: center;
-}
-
-.root3{
-  background-color: rgba(207, 227, 244, 0.235);
-  overflow:scroll;
+  background-image: url('carta (1).png');
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-flow: row;
+  gap: 10px 10px;
+  /* justify-content: center; */
   /* background-attachment: fixed; */
-  align-items: center;
+  /* align-items: center; */
   left: 0;
   right: 0;
   /* top: 50%; */
   /* transform: translate(-50%, -50%); */
   /* -webkit-transform: translate(-50%, -50%); */
-  max-width: 1200px;
-  max-height: 2500px;
+  max-width: 700px;
+  max-height: 600px;
   /* margin-top: 200px; */
   border-radius: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: auto;
-  margin-top:auto;
+  margin-bottom: 200px;
+  margin-top: 15px;
   text-align: center;
+  padding: 30px;
 }
 
 #title{
-    display:flex;
-    text-align: start;
-    color: #EBA83A;
-    margin-top: 5%;
-    text-shadow: 2px 2px 5px silver;
-    font-family: 'Harry Potter', sans-serif;
-    font-weight: 400;
-    font-size: 4.6vw;
-    flex-wrap: wrap;
-    justify-content: center;
+  display:flex;
+  text-align: start;
+  color: #EBA83A;
+  margin-top: 5%;
+  text-shadow: 2px 2px 5px silver;
+  font-family: 'Harry Potter', sans-serif;
+  font-weight: 400;
+  font-size: 4.6vw;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .foot{
-    display:flex;
-    text-align: end;
-    color: #ffffff;
-    font-family: 'Hina Mincho', serif;
-    font-weight: 400;
-    font-size: 1vw;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 35%;
-    padding: 10px;
-    
-  
+  display:flex;
+  text-align: end;
+  color: #ffffff;
+  font-family: 'Hina Mincho', serif;
+  font-weight: 400;
+  font-size: 1vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35%;
+  padding: 10px;
+}
+
+.foot1{
+  display:flex;
+  text-align: end;
+  color: #ffffff;
+  font-family: 'Hina Mincho', serif;
+  font-weight: 400;
+  font-size: 1vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35%;
+  padding: 10px;
+}
+
+.foot2{
+  display:flex;
+  text-align: end;
+  color: #ffffff;
+  font-family: 'Hina Mincho', serif;
+  font-weight: 400;
+  font-size: 1vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35%;
+  padding: 10px;
+}
+
+.foot3{
+  display:flex;
+  text-align: end;
+  color: #ffffff;
+  font-family: 'Hina Mincho', serif;
+  font-weight: 400;
+  font-size: 1vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35%;
+  padding: 10px;
+}
+
+.foot4{
+  display:flex;
+  text-align: end;
+  color: #ffffff;
+  font-family: 'Hina Mincho', serif;
+  font-weight: 400;
+  font-size: 1vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35%;
+  padding: 10px;
+}
+
+.foot5{
+  display:flex;
+  text-align: end;
+  color: #ffffff;
+  font-family: 'Hina Mincho', serif;
+  font-weight: 400;
+  font-size: 1vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35%;
+  padding: 10px;
 }
 
 .audio{
-    opacity: 0;
-    
+  opacity: 0; 
 }
 
-/* .list{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
-  
-  display: flex;
-  flex-direction:row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 80%;
- 
-  margin-bottom: 40px;
-  margin-top: 20px;
-  padding: 10px;
-
-}  */
-
-.card{
-    margin-left: 10px;
-    margin-right: 10px;
-    font-family: 'Hina Mincho', serif;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    align-items: center;
-    margin-top: 5%;
-    margin-bottom: 250px;
-    border-radius: 10px;
-    text-align: center;
-    max-height: 180px;
-    max-width: 1000px;
-    padding: 0;
-
+p{
+  margin: 0.5px;
+  padding: 5px;
+  font-size: 1.1vw;
 }
 
-.card2{
-  margin-left: 10px;
-  margin-right: 10px;
-  font-family: 'Hina Mincho', serif;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  align-items: center;
-  transition: 0.8s;
-  margin-top: 20%;
-  margin-bottom: 50%;
-  border-radius: 10px;
-  text-align: center;
-  max-height: 350px;
-  max-width: 1000px;
-}
-
-
-.cardDiv{
-    margin-left: 10px;
-    margin-right: 10px;
-    font-family: 'Hina Mincho', serif;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    width: 200px;
-    height: 250px;
-    text-align: center;
-    transition: 0.8s;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 15px;
-    padding: 5px;
-    background-color: #ffffff;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    align-content: center;
-
-}
-@media only screen and (max-width: 320px) {
-    .cardDiv {
-      height: 60px;
-      width: 40px;
-    }
-  }
-@media only screen and (max-width: 480px) {
-    .cardDiv {
-      height: 100px;
-      width: 80px;
-    }
-  }
-@media only screen and (max-width: 768px) {
-    .cardDiv {
-      height: 140px;
-      width: 110px;
-    }
-  }
-@media only screen and (max-width: 1024px) {
-    .cardDiv {
-      height: 170px;
-      width: 140px;
-    }
-  }
-/* @media only screen and (max-width: 1200px) {
-    .cardDiv {
-      height: 200px;
-      width: 250px;
-    }
-  } */
-
-  .cardDiv2{
-    margin-left: 10px;
-    margin-right: 10px;
-    font-family: 'Hina Mincho', serif;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    width: 200px;
-    height: 250px;
-    text-align: center;
-    transition: 0.8s;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-    border-radius: 15px;
-    padding: 5px;
-    background-color: #ffffff;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    align-content: center;
-
+h2{
+margin: 1px; 
+padding: 5px; 
+font-size: 1.4vw ;
 }
 
 #characters{
-    background-image: url('VARITAS.jpg');
-    background-size: cover ;
-    background-attachment: fixed;
-    background-position: center;
-    overflow: hidden;
+  background-image: url('VARITAS.jpg');
+  background-size: cover ;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: auto;
 }
 
 #titleChar{
-    display:flex;
-    text-align: start;
-    color: #b02626;
-    margin-top: 5%;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
-    font-family: 'Harry Potter', sans-serif;
-    font-weight: 400;
-    font-size: 4.6vw;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-#titleSpells{
   display:flex;
   text-align: start;
   color: #b02626;
@@ -360,6 +235,96 @@ h1{
   font-size: 4.6vw;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.root2{
+    background-color: rgba(207, 227, 244, 0.235);
+    overflow:auto;
+    position:absolute;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top ;
+    display: flex;
+    justify-content: center;
+    /* background-attachment:local; */
+    align-items: center;
+    left: 0;
+    right: 0;
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* -webkit-transform: translate(-50%, -50%); */
+    max-width: 1200px;
+    max-height: 900px;
+    /* margin-top: 200px; */
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-top:auto;
+    text-align: center;
+}
+
+.card{
+  margin-left: 1.3vh;
+  margin-right: 1.3vh;
+  font-family: 'Hina Mincho', serif;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 250px;
+  border-radius: 1.3vh;
+  text-align: center;
+  max-height: 26vh;
+  max-width: 134vh;
+
+}
+
+.cardDiv{
+  margin-left: 1.3vh;
+  margin-right: 1.3vh;
+  font-family: 'Hina Mincho', serif;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 107vh;
+  height: 20vh;
+  text-align: center;
+  margin-top: 1.3vh;
+  margin-bottom: 1.3vh;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  align-content: center;
+
+}
+@media only screen and (max-width: 320px) {
+  .cardDiv {
+    height: 60px;
+    width: 40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .cardDiv {
+    height: 100px;
+    width: 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cardDiv {
+    height: 140px;
+    width: 110px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .cardDiv {
+    height: 170px;
+    width: 140px;
+  }
 }
 
 .menuButton{
@@ -390,18 +355,6 @@ h1{
   .menuButton:hover{
       background: rgba(255, 66, 66, 0.3);
   }
-  
-p{
-    margin: 0.5px;
-    padding: 5px;
-    font-size: 1.1vw;
-}
-
-h2{
-  margin: 1px; 
-  padding: 5px; 
-  font-size: 1.4vw ;
-}
 
 .filterLabel{
     color: white;
@@ -454,6 +407,106 @@ h2{
   background-size: cover ;
   background-attachment: fixed;
   background-position: center;
+  overflow: auto;
+}
+
+#titleSpells{
+  display:flex;
+  text-align: start;
+  color: #b02626;
+  margin-top: 5%;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-family: 'Harry Potter', sans-serif;
+  font-weight: 400;
+  font-size: 4.6vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.root3{
+  background-color: rgba(207, 227, 244, 0.235);
+  overflow:auto;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  max-width: 1200px;
+  max-height: 900px;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-top:auto;
+  text-align: center;
+}
+
+
+.card2{
+  margin-left: 1.3vh;
+  margin-right: 1.3vh;
+  font-family: 'Hina Mincho', serif;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 250px;
+  border-radius: 1.3vh;
+  text-align: center;
+  max-height: 26vh;
+  max-width: 134vh;
+}
+
+.cardDiv2{
+    margin-left: 1.3vh;
+    margin-right: 1.3vh;
+    font-family: 'Hina Mincho', serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 107vh;
+    height: 20vh;
+    text-align: center;
+    margin-top: 1.3vh;
+    margin-bottom: 1.3vh;
+    padding: 5px;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    align-content: center;
+
+}
+@media only screen and (max-width: 320px) {
+  .cardDiv2 {
+    height: 60px;
+    width: 40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .cardDiv2 {
+    height: 100px;
+    width: 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cardDiv2 {
+    height: 140px;
+    width: 110px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .cardDiv2 {
+    height: 170px;
+    width: 140px;
+  }
 }
 
 .spellsSelect{
@@ -495,6 +548,218 @@ h2{
 .spellsSelect option {
     font-weight:normal;
   }
+
+#potions{
+    background-image: url('saladepociones.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: auto;
+  }
+
+#titlePot{
+    display:flex;
+    text-align: start;
+    color: #b02626;
+    margin-top: 5%;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-family: 'Harry Potter', sans-serif;
+    font-weight: 400;
+    font-size: 4.6vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.root4{
+  background-color: rgba(207, 227, 244, 0.235);
+  overflow:auto;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  max-width: 1200px;
+  max-height: 900px;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-top:auto;
+  text-align: center;
+}
+
+.card3{
+  margin-left: 1.3vh;
+  margin-right: 1.3vh;
+  font-family: 'Hina Mincho', serif;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 250px;
+  border-radius: 1.3vh;
+  text-align: center;
+  max-height: 26vh;
+  max-width: 134vh;
+}
+
+.cardDiv3{
+  margin-left: 1.3vh;
+  margin-right: 1.3vh;
+  font-family: 'Hina Mincho', serif;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 107vh;
+  height: 20vh;
+  text-align: center;
+  margin-top: 1.3vh;
+  margin-bottom: 1.3vh;
+  padding: 5px;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  align-content: center;
+
+}
+@media only screen and (max-width: 320px) {
+.cardDiv3 {
+  height: 60px;
+  width: 40px;
+}
+}
+@media only screen and (max-width: 480px) {
+.cardDiv3 {
+  height: 100px;
+  width: 80px;
+}
+}
+@media only screen and (max-width: 768px) {
+.cardDiv3 {
+  height: 140px;
+  width: 110px;
+}
+}
+@media only screen and (max-width: 1024px) {
+.cardDiv3 {
+  height: 170px;
+  width: 140px;
+}
+}
+
+#books{
+  background-image: url('kingscross.webp');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: auto;
+}
+
+#titleBooks{
+  display:flex;
+  text-align: start;
+  color: #b02626;
+  margin-top: 5%;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-family: 'Harry Potter', sans-serif;
+  font-weight: 400;
+  font-size: 4.6vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.root5{
+background-color: rgba(207, 227, 244, 0.235);
+overflow:auto;
+position: absolute;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top;
+display: flex;
+justify-content: center;
+align-items: center;
+left: 0;
+right: 0;
+max-width: 1200px;
+max-height: 900px;
+border-radius: 15px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 5px;
+margin-top:auto;
+text-align: center;
+}
+
+.card4{
+  margin-left: 1.3vh;
+  margin-right: 1.3vh;
+  font-family: 'Hina Mincho', serif;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 250px;
+  border-radius: 1.3vh;
+  text-align: center;
+  max-height: 26vh;
+  max-width: 134vh;
+}
+
+.cardDiv4{
+margin-left: 1.3vh;
+margin-right: 1.3vh;
+font-family: 'Hina Mincho', serif;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+color: black;
+width: 107vh;
+height: 20vh;
+text-align: center;
+margin-top: 1.3vh;
+margin-bottom: 1.3vh;
+padding: 5px;
+border-radius: 15px;
+padding: 5px;
+background-color: #ffffff;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+align-content: center;
+
+}
+@media only screen and (max-width: 320px) {
+.cardDiv4 {
+height: 60px;
+width: 40px;
+}
+}
+@media only screen and (max-width: 480px) {
+.cardDiv4 {
+height: 100px;
+width: 80px;
+}
+}
+@media only screen and (max-width: 768px) {
+.cardDiv4 {
+height: 140px;
+width: 110px;
+}
+}
+@media only screen and (max-width: 1024px) {
+.cardDiv4 {
+height: 170px;
+width: 140px;
+}
+}
 /* .cursor{
 --size: 20px;
 position: fixed;

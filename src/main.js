@@ -57,16 +57,16 @@ characters.forEach(function (character) {
   name.textContent = character.name;
   card.appendChild(name);
 
-  house.textContent = character.house;
+  house.textContent = 'House: ' + character.house;
   card.appendChild(house);
 
-  birth.textContent = character.birth;
+  birth.textContent = 'Birth: ' + character.birth;
   card.appendChild(birth);
 
-  wand.textContent = character.wand;
+  wand.textContent = 'Wand: ' + character.wand;
   card.appendChild(wand);
 
-  patronus.textContent = character.patronus;
+  patronus.textContent = 'Patronus: ' + character.patronus;
   card.appendChild(patronus);
 
   cardContainer.appendChild(card);
@@ -126,16 +126,16 @@ spells.forEach(function (spell) {
   name.textContent = spell.name;
   card2.appendChild(name);
 
-  other_name.textContent = spell.other_name;
+  other_name.textContent = 'Other Name: ' + spell.other_name;
   card2.appendChild(other_name);
 
-  pronunciation.textContent = spell.pronunciation;
+  pronunciation.textContent = 'Pronunciation: ' + spell.pronunciation;
   card2.appendChild(pronunciation);
 
-  type.textContent = spell.spell_type;
+  type.textContent = 'Type: ' + spell.spell_type;
   card2.appendChild(type);
 
-  description.textContent = spell.description;
+  description.textContent = 'Description: ' + spell.description;
   card2.appendChild(description);
 
   cardContainer2.appendChild(card2);
@@ -167,4 +167,107 @@ resultSpells.forEach(function (spell) {
   });
 
 
+// potions.forEach(function (potion) {
+//   const cardContainer3 = document.getElementById('cardContainer3');
+  
+//   const card3 = document.createElement('div');
+//   card3.classList.add('cardDiv3');
 
+//   const name = document.createElement('h');
+//   name.classList.add('nameDiv');
+  
+//   const description = document.createElement('p');
+//   description.classList.add('descriptionDiv');
+  
+//   name.textContent = spell.name;
+//   card2.appendChild(name);
+  
+//   description.textContent = 'Description: ' + spell.description;
+//   card2.appendChild(description);
+  
+//   cardContainer3.appendChild(card3);
+  
+//   });
+  
+// const potionsSelect = document.getElementById('potionsS')
+
+// potionsSelect.addEventListener("change", function () {
+  
+//     const type = spellsSelect.options[spellsSelect.selectedIndex].text;
+//     const resultSpells = filterSpells(spells, type);
+//   console.log(filterSpells(spells, type));
+
+// const cardContainer2 = document.getElementById('cardContainer2');
+// cardContainer2.innerHTML = '';
+  
+// resultSpells.forEach(function (spell) {
+//       cardContainer2.innerHTML +=
+//         `<div class='cardDiv2'>
+//             <h2 class='nameDiv'> ${spell.name}</h2> 
+//                <p class='othernameDiv'> Name: ${spell.other_name}</p>
+//                <p class='pronunciationDiv'> Pronunciation: ${spell.pronunciation}</p>
+//                <p class='spelltypeDiv'> Type: ${spell.spell_type}</p>
+//                <p class='descriptionDiv'>Description: ${spell.description}</p>
+//           </div>`
+//     });
+//   });
+
+// books.forEach(function (book) {
+//   const cardContainer2 = document.getElementById('cardContainer2');
+      
+//   const card2 = document.createElement('div');
+//   card2.classList.add('cardDiv2');
+    
+//   const name = document.createElement('h');
+//   name.classList.add('nameDiv');
+      
+//   const other_name = document.createElement('p');
+//   other_name.classList.add('other_nameDiv');
+      
+//   const pronunciation = document.createElement('p');
+//   pronunciation.classList.add('pronunciationDiv');
+      
+//   const type = document.createElement('p');
+//   type.classList.add('typeDiv');
+      
+//   name.textContent = spell.name;
+//   card2.appendChild(name);
+      
+//   other_name.textContent = 'Other Name: ' + spell.other_name;
+//   card2.appendChild(other_name);
+      
+//   pronunciation.textContent = 'Pronunciation: ' + spell.pronunciation;
+//   card2.appendChild(pronunciation);
+      
+//   type.textContent = 'Type: ' + spell.spell_type;
+//   card2.appendChild(type);
+      
+//   cardContainer4.appendChild(card4);
+      
+//   });
+      
+      
+// const booksSelect = document.getElementById('booksS')
+
+// booksSelect.addEventListener("change", function () {
+  
+//     const type = spellsSelect.options[spellsSelect.selectedIndex].text;
+//     const resultSpells = filterSpells(spells, type);
+//   console.log(filterSpells(spells, type));
+
+// const cardContainer2 = document.getElementById('cardContainer2');
+// cardContainer2.innerHTML = '';
+  
+// resultSpells.forEach(function (spell) {
+//       cardContainer2.innerHTML +=
+//         `<div class='cardDiv2'>
+//             <h2 class='nameDiv'> ${spell.name}</h2> 
+//                <p class='othernameDiv'> Name: ${spell.other_name}</p>
+//                <p class='pronunciationDiv'> Pronunciation: ${spell.pronunciation}</p>
+//                <p class='spelltypeDiv'> Type: ${spell.spell_type}</p>
+//                <p class='descriptionDiv'>Description: ${spell.description}</p>
+//           </div>`
+//     });
+//   });
+
+    
