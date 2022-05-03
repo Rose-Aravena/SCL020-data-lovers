@@ -80,33 +80,17 @@ h1{
 }
 
 .root1{
-  background-image: url('carta (1).png');
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-auto-flow: row;
-  gap: 10px 10px;
-  /* justify-content: center; */
-  /* background-attachment: fixed; */
-  /* align-items: center; */
-  left: 0;
-  right: 0;
-  /* top: 50%; */
-  /* transform: translate(-50%, -50%); */
-  /* -webkit-transform: translate(-50%, -50%); */
-  max-width: 700px;
-  max-height: 600px;
-  /* margin-top: 200px; */
-  border-radius: 15px;
+  background-color: rgba(43, 43, 43, 90%);
+  color: #D4A571;
+  justify-items: auto;
+  width: 70%;
+  height: 70%;
+  padding: 5%;
+  margin-top: 5%; 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
-  margin-top: 15px;
-  text-align: center;
-  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #title{
@@ -760,6 +744,197 @@ height: 170px;
 width: 140px;
 }
 }
+
+  /* para la barra de menu */
+  .navBar{
+    display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(0, 0, 0, 90%);
+      border-radius: 10px;
+      margin: 0px;
+      padding: 1px;
+  }
+  .navBar a{
+    text-decoration: none;
+    color: #EBA83A;
+  }
+  .logo{
+    margin-right: 50px;
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 3vw;
+    margin-top: 0.7%;
+    letter-spacing: 5px;
+    margin-left: 1.5vw;
+    text-shadow: 2px 4px 6px silver;
+    animation: parpadear 1.5s infinite;
+  }
+  .listMenu{
+    list-style: none;
+    display: flex;
+    margin-right: 2vw;
+    gap: 2.6vw;
+  }
+  #toggler, 
+  .navBar label{
+    display: none;
+    margin-right: 1vw;
+  }
+  @media (max-width: 600px){
+    .navMenu{
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+    }
+    .listMenu{
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .navBar label{
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      color: #EBA83A;
+    }
+    #toggler:checked ~ .navMenu{
+      max-height: 100%;
+    }
+  }
+  
+  /* burbujas */
+  .burbuja{
+    
+    border-radius: 50%;
+    background: #F6F54D;
+    opacity: .3;
+    position: absolute;
+    bottom: 0;
+    align-items: flex-end;
+  
+  animation: burbujas 5s linear infinite ;
+  }
+  .burbuja:nth-child(1){
+    width: 20px;
+    height: 30px;
+    left: 5%;
+    animation-duration: 4s;
+  }
+  .burbuja:nth-child(2){
+    width: 10px;
+    height: 20px;
+    left: 10%;
+    animation-duration: 4s;
+    animation-delay: 5.5s;
+  }
+  .burbuja:nth-child(3){
+    width: 15px;
+    height: 25px;
+    left: 15%;
+    animation-duration: 4s;
+    animation-delay: 2s;
+  }
+  .burbuja:nth-child(4){
+    width: 10px;
+    height: 20px;
+    left: 20%;
+    animation-duration: 4s;
+    animation-delay: 7s;
+  }
+  .burbuja:nth-child(5){
+    width: 20px;
+    height: 30px;
+    left: 25%;
+    animation-duration: 4s;
+    animation-delay: 4s;
+  }
+  .burbuja:nth-child(6){
+    width: 10px;
+    height: 20px;
+    left: 30%;
+    animation-duration: 4s;
+    animation-delay: 3.5s;
+  }
+  .burbuja:nth-child(7){
+    width: 5px;
+    height: 10px;
+    left: 35%;
+    animation-duration: 4s;
+    animation-delay: 4.5s;
+  }
+  .burbuja:nth-child(8){
+    width: 20px;
+    height: 30px;
+    left: 65%;
+    animation-duration: 4s;
+    animation-delay: 5.5s;
+  }
+  .burbuja:nth-child(9){
+    width: 10px;
+    height: 20px;
+    left: 70%;
+    animation-duration: 4s;
+    animation-delay: 2.5s;
+  }
+  .burbuja:nth-child(10){
+    width: 15px;
+    height: 25px;
+    left: 75%;
+    animation-duration: 4s;
+    animation-delay: 4s;
+  }
+  .burbuja:nth-child(11){
+    width: 25px;
+    height: 35px;
+    left: 80%;
+    animation-duration: 4s;
+    animation-delay: 5.2s;
+  }
+  .burbuja:nth-child(12){
+    width: 10px;
+    height: 20px;
+    left: 85%;
+    animation-duration: 4s;
+    animation-delay: 3.5s;
+  }
+  .burbuja:nth-child(13){
+    width: 20px;
+    height: 30px;
+    left: 90%;
+    animation-duration: 4s;
+    animation-delay: 1.5s;
+  }
+  .burbuja:nth-child(14){
+    width: 15px;
+    height: 25px;
+    left: 95%;
+    animation-duration: 4s;
+    
+  }
+  @keyframes burbujas{
+    0%{
+      bottom: 0;
+      opacity: 0;
+    }
+    50%{
+      opacity: .4;
+      background: #FEB139;
+    }
+    100%{
+      bottom: 100vh;
+      opacity: 0;
+      background: #F55353;
+    }
+  }
+  
+  /* pantalla menu */
+  .welcome{
+    align-items: center;
+  }
+  .info{
+  align-items: center;
+  }
 /* .cursor{
 --size: 20px;
 position: fixed;
