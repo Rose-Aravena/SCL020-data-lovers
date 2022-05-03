@@ -39,6 +39,9 @@ characters.forEach(function (character) {
   const card = document.createElement('div');
   card.classList.add('cardDiv');
 
+  const photo = document.createElement('img');
+  photo.classList.add('avatar');
+
   const name = document.createElement('h2');
   name.classList.add('nameDiv');
 
@@ -54,6 +57,12 @@ characters.forEach(function (character) {
   const patronus = document.createElement('p');
   patronus.classList.add('patronusDiv');
 
+  const bookFeatured =document.createElement('p');
+  bookFeatured.classList.add('bookFeaturedDiv');
+
+  photo.textContent = photo.src = 'imagenes/Mago.png'
+  card.appendChild(photo);
+
   name.textContent = character.name;
   card.appendChild(name);
 
@@ -68,6 +77,9 @@ characters.forEach(function (character) {
 
   patronus.textContent = 'Patronus: ' + character.patronus;
   card.appendChild(patronus);
+
+  bookFeatured.textContent = 'Book feature: '+ character.books_featured_in;
+  card.appendChild(bookFeatured);
 
   cardContainer.appendChild(card);
 
@@ -92,6 +104,7 @@ cardContainer.innerHTML = '';
              <p class='birthDiv'> Birth: ${character.birth}</p>
              <p class='wandDiv'> Wand: ${character.wand}</p>
              <p class='patronusDiv'>Patronus: ${character.patronus}</p>
+             <p class='bookFeaturedDiv'>Book feature: ${character.books_featured_in}</p>
         </div>`
   });
 });
