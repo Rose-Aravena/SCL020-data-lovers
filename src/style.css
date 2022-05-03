@@ -1,16 +1,15 @@
 
-h1{
+.text{
     font-family: 'Harry Potter', sans-serif;
     font-weight: 400;
-    font-size: 4.6vw;
-    letter-spacing: 5px;
+    font-size: 5vw;
+    letter-spacing: 0.4vh;
     color: #D4A571; 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 235px;
-    letter-spacing: 5px;
-    text-shadow: 0 0 10px #CE6C49, 0 0 15px #CE6C49, 0 0 20px #CE6C49, 0 0 30px #CE6C49; 
+    margin-top: 16.3vh;
+    text-shadow: 0 0 0.7vh #CE6C49, 0 0 1.04vh #CE6C49, 0 0 1.4vh #CE6C49, 0 0 2.08vh #CE6C49; 
     
 }
 
@@ -44,19 +43,17 @@ h1{
 .alohomoraButton{
     background-color: rgba(196, 202, 198, 3%);
     font-family: 'Hina Mincho', serif;
-    letter-spacing: 5px;
+    letter-spacing: 0.4vh;
     display: flex;
-    flex-wrap: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
+    margin-top: 1.5vh;
     margin-bottom: auto;
-    padding: 5px 25px;
+    padding: 0.4vh 1.7vh;
     text-align: center;
     font-size: 2.3vw;
-    border-radius: 20px;
+    border-radius: 1.4vh;
     text-shadow: 0 0 5px rgb(66, 194, 255), 0 0 15px rgb(133, 244, 255), 0 0 20px rgb(184, 255, 249), 0 0 40px rgb(239, 255, 253);
-    margin: 30;
     border-color: rgba(196, 202, 198, 10%);
     animation: parpadear 2s infinite ;
     
@@ -66,14 +63,14 @@ h1{
   }
 
 #index{
-    background-image: url('INDEX.png');
+    background-image: url('imagenes/INDEX.png');
     background-size: cover ;
     background-attachment: fixed;
     background-position: center;
 }
 
 #menu{
-    background-image: url('MENU.png');
+    background-image: url('imagenes/MENU.png');
     background-size: cover ;
     background-attachment: fixed;
     background-position: center;
@@ -82,7 +79,6 @@ h1{
 .root1{
   background-color: rgba(43, 43, 43, 90%);
   color: #D4A571;
-  justify-items: auto;
   width: 70%;
   height: 70%;
   padding: 5%;
@@ -106,86 +102,8 @@ h1{
   justify-content: center;
 }
 
-.foot{
-  display:flex;
-  text-align: end;
-  color: #ffffff;
-  font-family: 'Hina Mincho', serif;
-  font-weight: 400;
-  font-size: 1vw;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 35%;
-  padding: 10px;
-}
-
-.foot1{
-  display:flex;
-  text-align: end;
-  color: #ffffff;
-  font-family: 'Hina Mincho', serif;
-  font-weight: 400;
-  font-size: 1vw;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 35%;
-  padding: 10px;
-}
-
-.foot2{
-  display:flex;
-  text-align: end;
-  color: #ffffff;
-  font-family: 'Hina Mincho', serif;
-  font-weight: 400;
-  font-size: 1vw;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 35%;
-  padding: 10px;
-}
-
-.foot3{
-  display:flex;
-  text-align: end;
-  color: #ffffff;
-  font-family: 'Hina Mincho', serif;
-  font-weight: 400;
-  font-size: 1vw;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 35%;
-  padding: 10px;
-}
-
-.foot4{
-  display:flex;
-  text-align: end;
-  color: #ffffff;
-  font-family: 'Hina Mincho', serif;
-  font-weight: 400;
-  font-size: 1vw;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 35%;
-  padding: 10px;
-}
-
-.foot5{
-  display:flex;
-  text-align: end;
-  color: #ffffff;
-  font-family: 'Hina Mincho', serif;
-  font-weight: 400;
-  font-size: 1vw;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 35%;
-  padding: 10px;
-}
-
 .audio{
-  opacity: 0; 
+  opacity: 0.1; 
 }
 
 p{
@@ -201,7 +119,7 @@ font-size: 1.4vw ;
 }
 
 #characters{
-  background-image: url('VARITAS.jpg');
+  background-image: url('imagenes/VARITAS.jpg');
   background-size: cover ;
   background-attachment: fixed;
   background-position: center;
@@ -212,7 +130,8 @@ font-size: 1.4vw ;
   display:flex;
   text-align: start;
   color: #b02626;
-  margin-top: 5%;
+  margin-top: 2%;
+  margin-bottom: 1%;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
   font-family: 'Harry Potter', sans-serif;
   font-weight: 400;
@@ -222,30 +141,20 @@ font-size: 1.4vw ;
 }
 
 .root2{
-    background-color: rgba(207, 227, 244, 0.235);
-    overflow:auto;
-    position:absolute;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:top ;
-    display: flex;
-    justify-content: center;
-    /* background-attachment:local; */
-    align-items: center;
-    left: 0;
-    right: 0;
-    /* top: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* -webkit-transform: translate(-50%, -50%); */
-    max-width: 1200px;
-    max-height: 900px;
-    /* margin-top: 200px; */
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
-    margin-top:auto;
-    text-align: center;
+  background-color: rgba(207, 227, 244, 0.235);
+  overflow: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-top: auto;
+  text-align: center;
 }
 
 .card{
@@ -339,6 +248,15 @@ font-size: 1.4vw ;
   .menuButton:hover{
       background: rgba(255, 66, 66, 0.3);
   }
+.divFilter{
+  background-color: rgb(6, 0, 0, 50%);
+  width: 100%;
+  height: auto;
+  padding: 1%;
+  margin-bottom: 1%;
+  align-content: inherit;
+
+}
 
 .filterLabel{
     color: white;
@@ -346,27 +264,19 @@ font-size: 1.4vw ;
     margin-left: 65%;
     line-height: 1.3;
 }
-.houseSelect{
-  display: block;
+.houseSelect, .spellsSelect, .potionsSelect, .booksSelect{
   font-size: 1vw;
   font-family: 'Hina Mincho', serif;
   font-weight: 700;
   text-align: center;
   color: black;
-  line-height: 1.3;
-  padding: .4em 1.4em .3em .8em;
   width: 400px;
-  margin-left: 72%;
   max-width: 150px; 
   box-sizing: border-box;
   border: 1px solid rgba(201, 2, 2, 0.769);
   box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
   border-radius: .3em;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
   background-color: #fff; 
-  margin-top: -20px;
 }
 
 .houseSelect::-ms-expand {
@@ -387,7 +297,7 @@ font-size: 1.4vw ;
   }
 
 #spells{
-  background-image: url('Clubduelo.webp');
+  background-image: url('imagenes/Clubduelo.webp');
   background-size: cover ;
   background-attachment: fixed;
   background-position: center;
@@ -406,29 +316,6 @@ font-size: 1.4vw ;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.root3{
-  background-color: rgba(207, 227, 244, 0.235);
-  overflow:auto;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 0;
-  right: 0;
-  max-width: 1200px;
-  max-height: 900px;
-  border-radius: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5px;
-  margin-top:auto;
-  text-align: center;
-}
-
 
 .card2{
   margin-left: 1.3vh;
@@ -493,28 +380,7 @@ font-size: 1.4vw ;
   }
 }
 
-.spellsSelect{
-  display: block;
-  font-size: 1vw;
-  font-family: 'Hina Mincho', serif;
-  font-weight: 700;
-  text-align: center;
-  color: black;
-  line-height: 1.3;
-  padding: .4em 1.4em .3em .8em;
-  width: 400px;
-  margin-left: 74.5%;
-  max-width: 150px; 
-  box-sizing: border-box;
-  border: 1px solid rgba(201, 2, 2, 0.769);
-  box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
-  border-radius: .3em;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #fff; 
-  margin-top: -20px;
-}
+
 
 .spellsSelect::-ms-expand {
     display: none;
@@ -534,7 +400,7 @@ font-size: 1.4vw ;
   }
 
 #potions{
-    background-image: url('saladepociones.jpg');
+    background-image: url('imagenes/saladepociones.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -552,28 +418,6 @@ font-size: 1.4vw ;
     font-size: 4.6vw;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.root4{
-  background-color: rgba(207, 227, 244, 0.235);
-  overflow:auto;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 0;
-  right: 0;
-  max-width: 1200px;
-  max-height: 900px;
-  border-radius: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5px;
-  margin-top:auto;
-  text-align: center;
 }
 
 .card3{
@@ -640,7 +484,7 @@ font-size: 1.4vw ;
 }
 
 #books{
-  background-image: url('kingscross.webp');
+  background-image: url('imagenes/kingscross.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -658,28 +502,6 @@ font-size: 1.4vw ;
   font-size: 4.6vw;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.root5{
-background-color: rgba(207, 227, 244, 0.235);
-overflow:auto;
-position: absolute;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: top;
-display: flex;
-justify-content: center;
-align-items: center;
-left: 0;
-right: 0;
-max-width: 1200px;
-max-height: 900px;
-border-radius: 15px;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 5px;
-margin-top:auto;
-text-align: center;
 }
 
 .card4{
@@ -753,7 +575,7 @@ width: 140px;
       justify-content: space-between;
       background-color: rgba(0, 0, 0, 90%);
       border-radius: 10px;
-      margin: 0px;
+      margin: 1%;
       padding: 1px;
   }
   .navBar a{
@@ -934,57 +756,27 @@ width: 140px;
   }
   .info{
   align-items: center;
+  }   
+
+  /* footer*/
+  footer{
+    color: #ffffff;
+    font-family: 'Hina Mincho', serif;
+    padding: 1em 0;
+    text-align: center;
+    margin-top: auto;
+  
   }
-/* .cursor{
---size: 20px;
-position: fixed;
-width: var(10px);
-height: var(10px);
-top: calc(var(10px)/-2);
-left: calc(var(10px)/-2);
-transform: translate(var(--cursor-x, -100px), var(--cursor-y, -100px)) translateZ(0);
-pointer-events: none;
-transition: none;
-z-index: 11000;
-will-change: transform;
+
+  body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+.avatar{
+  border-radius: 50%;
+  height: 10.4vh;
+  width: 10.4vh;
 }
-
-.cursor__inner{
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: var(--color-white);
-    border: 1px solid var(--color-black);
-    transition: all 0.15s ease-in-out;
-    opacity: 1;
-    transform: scale(1) translateZ(0);
-} */
-
-    
-    /* width: 10px;
-    height: 10px;
-    cursor:url('varita-magica.png'), auto;	
-    background:black;
-    border: 10px solid white;
-    border-radius: 50%;
-    position: absolute; */
-    /* transform: translateY -10px;
-    transform: translateX -15px; */
-
-
-
-  
-  /* .card-block,
-  .card-block-back {
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-  
-  .card-block-back {
-    transform: rotateY(180deg);
-    position: absolute;
-    top: 0%;
-  } */
-

@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body id="characters">
-    <div id="titleChar">Characters</div>
-    <nav class="navBar">
-      <a href="menu.html" class="logo">HP</a>
-      <input type="checkbox" id="toggler">
-      <label for="toggler"><i class="ri-menu-line"></i></label>
-      <div class="navMenu">
-        <ul class="listMenu">
-          <li> <a href="characters.html">Characters</a></li>
-          <li> <a href="spells.html">Spells</a></li>
-          <li> <a href="potions.html">Potions</a></li>
-          <li> <a href="books.html">books</a></li>
-        </ul>
-      </div>
-    </nav>
-    <label class="filterLabel">Filter by House</label>
-    <select class="houseSelect" id="houseS">
-      <option value=" ">Select house</option>
-      <option value="gryffindor">Gryffindor</option>
-      <option value="slytherin">Slytherin</option>
-      <option value="ravenclaw">Ravenclaw</option>
-      <option value="hufflepuff">Hufflepuff</option>
-    </select>
-    <div id="root2" class="root2">
-      <div id="cardContainer" class="card"></div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet" />
+</head>
+
+<body id="characters">
+  <div id="titleChar">Characters</div>
+  <nav class="navBar">
+    <a href="menu.html" class="logo">HP</a>
+    <input type="checkbox" id="toggler">
+    <label for="toggler"><i class="ri-menu-line"></i></label>
+    <div class="navMenu">
+      <ul class="listMenu">
+        <li> <a href="characters.html">Characters</a></li>
+        <li> <a href="spells.html">Spells</a></li>
+        <li> <a href="potions.html">Potions</a></li>
+        <li> <a href="books.html">books</a></li>
+      </ul>
     </div>
-    <!-- <div class="cursor">
+  </nav>
+  <div class="divFilter">
+  <label class="filterLabel">Filter by House</label>
+  <select class="houseSelect" id="houseS">
+    <option value=" ">Select house</option>
+    <option value="gryffindor">Gryffindor</option>
+    <option value="slytherin">Slytherin</option>
+    <option value="ravenclaw">Ravenclaw</option>
+    <option value="hufflepuff">Hufflepuff</option>
+  </select>
+  </div>
+  <div class="root2">
+    <div id="cardContainer" class="card"></div>
+  </div>
+  <!-- <div class="cursor">
       <div class="cursor__inner"></div>
     </div>   -->
-    <footer class="foot2">Author Rose Aravena and Carolina Zapata © 2022 </footer>    
-    <script src="main.js" type="module"></script>
-  </body>
+  <footer>Author Rose Aravena and Carolina Zapata © 2022 </footer>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>

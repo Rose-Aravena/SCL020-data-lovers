@@ -8,6 +8,7 @@
     <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap"
       rel="stylesheet"
@@ -28,23 +29,25 @@
         </ul>
       </div>
     </nav>
-    <label class="filterLabel">Filter by type</label>
-    <select class="spellsSelect" id="spellsS">
-      <option value=" ">Select type</option>
-      <option value="Charm">Charm</option>
-      <option value="Jinx">Jinx</option>
-      <option value="Transfiguration">Transfiguration</option>
-      <option value="Curse">Curse</option>
-      <option value="Hex">Hex</option>
-      <option value="Conjuration">Conjuration</option>
-    </select>
-    <div id="root3" class="root3">
+    <div class="divFilter">
+      <label class="filterLabel">Filter by type</label>
+      <select class="spellsSelect" id="spellsS">
+       <option value=" ">Select type</option>
+       <option value="Charm">Charm</option>
+       <option value="Jinx">Jinx</option>
+       <option value="Transfiguration">Transfiguration</option>
+       <option value="Curse">Curse</option>
+       <option value="Hex">Hex</option>
+       <option value="Conjuration">Conjuration</option>
+     </select>
+    </div>
+    <div class="root2">
       <div id="cardContainer2" class="card2"></div>
     </div>
     <!-- <div class="cursor">
       <div class="cursor__inner"></div>
     </div>   -->
     <footer class="foot3">Author Rose Aravena and Carolina Zapata © 2022 </footer>    
-    <script src="main.js" type="module"></script>
+    <script src="spell.js" type="module"></script>
   </body>
 </html>
