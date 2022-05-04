@@ -12,14 +12,114 @@ const filterHouse = (characters,house)=>{
 const filterSpells = (spells,spell_type)=>{
  return spells.filter(spell => spell.spell_type === spell_type);
 }
-export {filterHouse, filterSpells};
-// export default function (character)
-// const sorts = characters.sort((a,b)=>a-b);
-
-// console.log('Sorts', sorts);
 
 
+function createCharacter(){
+  const cardContainer = document.createElement('div');
+  characters.forEach(function (character) {
+ 
+   const card = document.createElement('div');
+    card.classList.add('cardDiv');
 
+    const photo = document.createElement('img');
+    photo.classList.add('avatar');
+
+    const name = document.createElement('h2');
+    name.classList.add('nameDiv');
+
+    const house = document.createElement('p');
+    house.classList.add('houseDiv');
+
+    const birth = document.createElement('p');
+    birth.classList.add('birthDiv');
+
+    const wand = document.createElement('p');
+    wand.classList.add('wandDiv');
+
+    const patronus = document.createElement('p');
+    patronus.classList.add('patronusDiv');
+
+    const bookFeatured =document.createElement('p');
+    bookFeatured.classList.add('bookFeaturedDiv');
+
+    photo.textContent = photo.src = 'imagenes/Mago.png'
+    card.appendChild(photo);
+
+    name.textContent = character.name;
+    card.appendChild(name);
+
+    house.textContent = 'House: ' + character.house;
+    card.appendChild(house);
+
+    birth.textContent = 'Birth: ' + character.birth;
+    card.appendChild(birth);
+
+    wand.textContent = 'Wand: ' + character.wand;
+    card.appendChild(wand);
+
+    patronus.textContent = 'Patronus: ' + character.patronus;
+    card.appendChild(patronus);
+
+    bookFeatured.textContent = 'Book feature: '+ character.books_featured_in;
+    card.appendChild(bookFeatured);
+
+    cardContainer.appendChild(card);
+    });
+return (cardContainer)
+}
+
+function createSpell(){
+  const cardContainer2 = document.createElement('div');
+  spells.forEach(function (spell) {
+  //const cardContainer2 = document.getElementById('cardContainer2');
+
+  const card2 = document.createElement('div');
+  card2.classList.add('cardDiv2');
+
+  const name = document.createElement('h');
+  name.classList.add('nameDiv');
+
+  const other_name = document.createElement('p');
+  other_name.classList.add('other_nameDiv');
+
+  const pronunciation = document.createElement('p');
+  pronunciation.classList.add('pronunciationDiv');
+
+  const type = document.createElement('p');
+  type.classList.add('typeDiv');
+
+  const description = document.createElement('p');
+  description.classList.add('descriptionDiv');
+
+  const mention = document.createElement('p');
+  mention.classList.add('mentionDiv');
+
+  const etymology = document.createElement('p');
+  etymology.classList.add('etymologyDiv');
+
+  name.textContent = spell.name;
+  card2.appendChild(name);
+
+  other_name.textContent = 'Other Name: ' + spell.other_name;
+  card2.appendChild(other_name);
+
+  pronunciation.textContent = 'Pronunciation: ' + spell.pronunciation;
+  card2.appendChild(pronunciation);
+
+  type.textContent = 'Type: ' + spell.spell_type;
+  card2.appendChild(type);
+
+  description.textContent = 'Description: ' + spell.description;
+  card2.appendChild(description);
+
+  cardContainer2.appendChild(card2);
+
+});
+return (cardContainer2)
+}
+
+
+export {filterHouse, filterSpells,createSpell};
 // const cursor = document.querySelector('cursor');
 
 // const addEventListeners = () => {
