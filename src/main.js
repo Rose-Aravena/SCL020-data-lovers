@@ -33,57 +33,64 @@ let books = data.books;
 
 let funFacts = data.funFacts;
 
-characters.forEach(function (character) {
-  const cardContainer = document.getElementById('cardContainer');
+const pathName = window.location.pathname
+if(pathName=="/src/spells.html"){
+  const cardSpells= createSpell();
+  const cardContainer2 = document.getElementById('cardContainer2');
+  cardContainer2.appendChild(cardSpells)
 
-  const card = document.createElement('div');
-  card.classList.add('cardDiv');
+}
+// characters.forEach(function (character) {
+//   const cardContainer = document.getElementById('cardContainer');
 
-  const photo = document.createElement('img');
-  photo.classList.add('avatar');
+//   const card = document.createElement('div');
+//   card.classList.add('cardDiv');
 
-  const name = document.createElement('h2');
-  name.classList.add('nameDiv');
+//   const photo = document.createElement('img');
+//   photo.classList.add('avatar');
 
-  const house = document.createElement('p');
-  house.classList.add('houseDiv');
+//   const name = document.createElement('h2');
+//   name.classList.add('nameDiv');
 
-  const birth = document.createElement('p');
-  birth.classList.add('birthDiv');
+//   const house = document.createElement('p');
+//   house.classList.add('houseDiv');
 
-  const wand = document.createElement('p');
-  wand.classList.add('wandDiv');
+//   const birth = document.createElement('p');
+//   birth.classList.add('birthDiv');
 
-  const patronus = document.createElement('p');
-  patronus.classList.add('patronusDiv');
+//   const wand = document.createElement('p');
+//   wand.classList.add('wandDiv');
 
-  const bookFeatured =document.createElement('p');
-  bookFeatured.classList.add('bookFeaturedDiv');
+//   const patronus = document.createElement('p');
+//   patronus.classList.add('patronusDiv');
 
-  photo.textContent = photo.src = 'imagenes/Mago.png'
-  card.appendChild(photo);
+//   const bookFeatured =document.createElement('p');
+//   bookFeatured.classList.add('bookFeaturedDiv');
 
-  name.textContent = character.name;
-  card.appendChild(name);
+//   photo.textContent = photo.src = 'imagenes/Mago.png'
+//   card.appendChild(photo);
 
-  house.textContent = 'House: ' + character.house;
-  card.appendChild(house);
+//   name.textContent = character.name;
+//   card.appendChild(name);
 
-  birth.textContent = 'Birth: ' + character.birth;
-  card.appendChild(birth);
+//   house.textContent = 'House: ' + character.house;
+//   card.appendChild(house);
 
-  wand.textContent = 'Wand: ' + character.wand;
-  card.appendChild(wand);
+//   birth.textContent = 'Birth: ' + character.birth;
+//   card.appendChild(birth);
 
-  patronus.textContent = 'Patronus: ' + character.patronus;
-  card.appendChild(patronus);
+//   wand.textContent = 'Wand: ' + character.wand;
+//   card.appendChild(wand);
 
-  bookFeatured.textContent = 'Book feature: '+ character.books_featured_in;
-  card.appendChild(bookFeatured);
+//   patronus.textContent = 'Patronus: ' + character.patronus;
+//   card.appendChild(patronus);
 
-  cardContainer.appendChild(card);
+//   bookFeatured.textContent = 'Book feature: '+ character.books_featured_in;
+//   card.appendChild(bookFeatured);
 
-});
+//   cardContainer.appendChild(card);
+
+// });
 
 
 const houseSelect = document.getElementById('houseS')
@@ -109,8 +116,11 @@ cardContainer.innerHTML = '';
   });
 });
 
+
+function createSpell(){
+  const cardContainer2 = document.createElement('div');
 spells.forEach(function (spell) {
-  const cardContainer2 = document.getElementById('cardContainer2');
+  //const cardContainer2 = document.getElementById('cardContainer2');
 
   const card2 = document.createElement('div');
   card2.classList.add('cardDiv2');
@@ -154,6 +164,9 @@ spells.forEach(function (spell) {
   cardContainer2.appendChild(card2);
 
 });
+return (cardContainer2)
+}
+
 
 
 const spellsSelect = document.getElementById('spellsS')
