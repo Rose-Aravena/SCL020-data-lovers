@@ -135,7 +135,7 @@ font-size: 1.4vw ;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
   font-family: 'Harry Potter', sans-serif;
   font-weight: 400;
-  font-size: 4.6vw;
+  font-size: 5vw;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -196,37 +196,6 @@ font-size: 1.4vw ;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   align-content: center;
 
-}
-@media only screen and (max-width: 320px) {
-  .cardDiv {
-    height: 60px;
-    width: 40px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .cardDiv {
-    height: 100px;
-    width: 80px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .cardDiv {
-    height: 140px;
-    width: 110px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .card{
-    width: 900px;
-  }
-  .cardDiv {
-    height: auto;
-    width: 700px;
-  }
-  .avatar{
-    height: 80px;
-    width: 80px;
-  }
 }
 
 .menuButton{
@@ -321,7 +290,7 @@ font-size: 1.4vw ;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
   font-family: 'Harry Potter', sans-serif;
   font-weight: 400;
-  font-size: 4.6vw;
+  font-size: 5vw;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -792,8 +761,8 @@ width: 140px;
 
 .avatar{
   border-radius: 50%;
-  height: 19vh;
-  width: 19vh;
+  height: 150px;
+  width: 150px;
   border: #222;
   box-shadow: 4px 8px 10px rgb(33, 32, 32);
   margin: 0px 30px;
@@ -807,4 +776,234 @@ width: 140px;
 
 .textDiv{
   justify-content: center;
+}
+
+@media only screen and (max-width: 320px) {
+  .cardDiv {
+    height: 60px;
+    width: 40px;
+  }
+  h3{
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 319px) and (max-width: 480px) {
+  /* para el menuhtml */
+  h3{
+    font-size: 1.1em;
+  }
+  .info{
+    font-size: 0.6em;
+  }
+  /* para el characterhtml */
+  #titleChar{
+    font-size: 1.8em;
+  }
+  .filterLabel{
+    font-size: 0.5em;
+  }
+  .houseSelect{
+    width: 50px;
+  }
+  .root2{
+    width: 330px;
+  }
+  .cardDiv {
+    height: auto;
+    width: 200px;
+  }
+  .avatar{
+    height: 60px;
+    width: 60px;
+  }
+  .nameDiv{
+    font-size: 1em;
+  }
+  p{
+    font-size: 0.5em;
+  }
+   /* para el potionshtml */
+   .cardDiv3{
+    height: auto;
+    width: 250px;
+    padding: 10px 20px;
+    margin: 10px 30px;
+  }
+/* para el bookshtml */
+  .cardDiv4{
+    height: auto;
+    width: 250px;
+    padding: 10px;
+    margin: 10px 5px;
+  }
+}
+@media (min-width: 479px)  and (max-width: 820px) {
+  /* para el menuhtml */
+  h3{
+    font-size: 1.4em;
+  }
+  .info{
+    font-size: 1em;
+  }
+  li{
+    font-size: 1.2em;
+    padding: 5px;
+  }
+  /* para el characterhtml */
+  #titleChar{
+    font-size: 2.5em;
+  }
+  .filterLabel{
+    font-size: 0.7em;
+  }
+  .houseSelect{
+    width: 90px;
+  }
+  .root2{
+    width: 700px;
+    align-items: center;
+  }
+  .card{
+    height: auto;
+    width: 650px;
+  }
+  .cardDiv {
+    height: auto;
+    width: 550px;
+  }
+  .avatar{
+    height: 130px;
+    width: 130px;
+  }
+  .nameDiv{
+    font-size: 1.5em;
+    
+  }
+  p{
+    font-size: 1em;
+  }
+    /* para el potionshtml */
+    .cardDiv3{
+      width: 450px;
+      padding: 30px 20px;
+      margin: 30px 30px;
+    }
+  /* para el bookshtml */
+    .cardDiv4{
+      height: auto;
+      width: 450px;
+      padding: 10px;
+      margin: 10px 5px;
+    }
+}
+@media (min-width: 821px) and (max-width: 1440px) {
+/* para el menuhtml */
+  h3{
+    font-size: 2em;
+  }
+  .info{
+    font-size: 1.5em;
+  }
+  li{
+    font-size: 1.5em;
+    padding: 10px;
+  }
+  footer{
+    font-size: 1.3em;
+  }
+   /* para el characterhtml */
+   .filterLabel{
+    font-size: 1em;
+  }
+  
+  .card{
+    width: 980px;
+  }
+  .cardDiv {
+    height: auto;
+    width: 900px;
+  }
+  .avatar{
+    height: 180px;
+    width: 180px;
+  }
+  .nameDiv{
+    font-size: 2.3em;
+    
+  }
+  p{
+    font-size: 1.3em;
+  }
+   /* para el spellshtml */
+   .card2{
+     width: 700px;
+   }
+   .cardDiv2{
+     height: auto;
+     width: 600px;
+    padding: 20px;
+  }
+   /* para el potionshtml */
+   .cardDiv3{
+    padding: 30px 100px;
+    margin: 30px 10px;
+  }
+/* para el bookshtml */
+  .cardDiv4{
+    padding: 30px;
+    margin: 30px 10px;
+  }
+}
+@media (min-width: 1450px) and (max-width: 3500px) {
+  /* para el menuhtml */
+  h3{
+    font-size: 3.5em;
+  }
+  .info{
+    font-size: 1.8em;
+  }
+  li{
+    font-size: 2em;
+    padding: 16px;
+  }
+  footer{
+    font-size: 1.2em;
+  }
+  /* para el characterhtml */
+  .filterLabel{
+    font-size: 1.1em;
+  }
+  .card{
+    width: 2200px;
+  }
+  .cardDiv{
+    height: auto;
+    width: 1300px;
+  }
+  .avatar{
+    height: 250px;
+    width: 250px;
+  }
+  .nameDiv{
+    font-size: 3em;
+  }
+  p{
+    font-size: 1.5em;
+  }
+  /* para el spellshtml */
+  .cardDiv2{
+    padding: 50px;
+  }
+   /* para el potionshtml */
+   .cardDiv3{
+    padding: 50px 200px;
+  }
+/* para el bookshtml */
+  .cardDiv4{
+    padding: 50px;
+  }
+  .nameDiv{
+    font-size: 3.8em;
+  }
 }
