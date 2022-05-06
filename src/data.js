@@ -1,8 +1,4 @@
-// export const houses = characters.filter(function(gryffindor){
-//   if (characters.house === 'Gryffindor'){
-//   return true
-// }
-// })
+
 
 const filterHouse = (characters,house)=>{
  return characters.filter(character => character.house === house);
@@ -14,202 +10,202 @@ const filterSpells = (spells,spell_type)=>{
 }
 
 
-// function createCharacter(){
-//   const cardContainer = document.createElement('div');
-//   cardContainer.classList.add('card');
-//   characters.forEach(function (character) {
+function createCharacter(characters){
+  const cardContainer = document.createElement('div');
+  cardContainer.classList.add('card');
+  characters.forEach(function (character) {
 
-//     const card = document.createElement('div');
-//     card.classList.add('cardDiv');
+    const card = document.createElement('div');
+    card.classList.add('cardDiv');
 
-//     const cardPhoto = document.createElement('div');
-//     cardPhoto.classList.add('photo');
+    const cardPhoto = document.createElement('div');
+    cardPhoto.classList.add('photo');
  
-//     const text = document.createElement('div');
-//     text.classList.add('textDiv')
+    const text = document.createElement('div');
+    text.classList.add('textDiv')
 
-//     const photo = document.createElement('img');
-//     photo.classList.add('avatar');
+    const photo = document.createElement('img');
+    photo.classList.add('avatar');
 
-//     const name = document.createElement('h2');
-//     name.classList.add('nameDiv');
+    const name = document.createElement('h2');
+    name.classList.add('nameDiv');
 
-//     const birth = document.createElement('p');
-//     birth.classList.add('birthDiv');
+    const birth = document.createElement('p');
+    birth.classList.add('birthDiv');
 
-//     const ancestry = document.createElement('p');
-//     ancestry.classList.add('ancestryDiv');
+    const ancestry = document.createElement('p');
+    ancestry.classList.add('ancestryDiv');
 
-//     const house = document.createElement('p');
-//     house.classList.add('houseDiv');
+    const house = document.createElement('p');
+    house.classList.add('houseDiv');
 
-//     const wand = document.createElement('p');
-//     wand.classList.add('wandDiv');
+    const wand = document.createElement('p');
+    wand.classList.add('wandDiv');
 
-//     const patronus = document.createElement('p');
-//     patronus.classList.add('patronusDiv');
+    const patronus = document.createElement('p');
+    patronus.classList.add('patronusDiv');
 
-//     const bookFeatured =document.createElement('p');
-//     bookFeatured.classList.add('bookFeaturedDiv');
+    const bookFeatured =document.createElement('p');
+    bookFeatured.classList.add('bookFeaturedDiv');
 
-//     const death =document.createElement('p');
-//     death.classList.add('deathDiv');
+    const death =document.createElement('p');
+    death.classList.add('deathDiv');
 
-//     photo.textContent = photo.src = 'imagenes/Mago.png'
-//     cardPhoto.appendChild(photo);
-//     card.appendChild(cardPhoto);
+    photo.textContent = photo.src = 'imagenes/Mago2.png'
+    cardPhoto.appendChild(photo);
+    card.appendChild(cardPhoto);
 
-//     name.textContent = character.name;
-//     text.appendChild(name);
+    name.textContent = character.name;
+    text.appendChild(name);
 
-//     birth.textContent = 'Birth: ' + character.birth;
-//     text.appendChild(birth);
+    birth.textContent = 'Birth: ' + character.birth;
+    text.appendChild(birth);
 
-//     ancestry.textContent = 'Ancestry: ' + character.ancestry;
-//     text.appendChild(ancestry);
+    ancestry.textContent = 'Ancestry: ' + character.ancestry;
+    text.appendChild(ancestry);
     
-//     house.textContent = 'House: ' + character.house;
-//     text.appendChild(house);
+    house.textContent = 'House: ' + character.house;
+    text.appendChild(house);
 
-//     wand.textContent = 'Wand: ' + character.wand;
-//     text.appendChild(wand);
+    wand.textContent = 'Wand: ' + character.wand;
+    text.appendChild(wand);
 
-//     patronus.textContent = 'Patronus: ' + character.patronus;
-//     text.appendChild(patronus);
+    patronus.textContent = 'Patronus: ' + character.patronus;
+    text.appendChild(patronus);
 
-//     bookFeatured.textContent = 'Book feature: '+ character.books_featured_in;
-//     text.appendChild(bookFeatured);
+    bookFeatured.textContent = 'Book feature: '+ character.books_featured_in;
+    text.appendChild(bookFeatured);
 
-//     death.textContent = 'Death: '+ character.death;
-//     text.appendChild(death);
+    death.textContent = 'Death: '+ character.death;
+    text.appendChild(death);
 
-//     card.appendChild(cardPhoto);
-//     card.appendChild(text);
-//     cardContainer.appendChild(card);
-//     });
-// return (cardContainer)
-// }
+    card.appendChild(cardPhoto);
+    card.appendChild(text);
+    cardContainer.appendChild(card);
+    });
+return (cardContainer)
+}
 
-// function createSpell(){
-//   const cardContainer2 = document.createElement('div');
-//   cardContainer2.classList.add('card2');
-//   spells.forEach(function (spell) {
-//   //const cardContainer2 = document.getElementById('cardContainer2');
+function createSpell(spells){
+  const cardContainer2 = document.createElement('div');
+  cardContainer2.classList.add('card2');
+  spells.forEach(function (spell) {
+  //const cardContainer2 = document.getElementById('cardContainer2');
 
-//   const card2 = document.createElement('div');
-//   card2.classList.add('cardDiv2');
+  const card2 = document.createElement('div');
+  card2.classList.add('cardDiv2');
 
-//   const name = document.createElement('h2');
-//   name.classList.add('nameDiv');
+  const name = document.createElement('h2');
+  name.classList.add('nameDiv');
 
-//   const other_name = document.createElement('p');
-//   other_name.classList.add('other_nameDiv');
+  const other_name = document.createElement('p');
+  other_name.classList.add('other_nameDiv');
 
-//   const pronunciation = document.createElement('p');
-//   pronunciation.classList.add('pronunciationDiv');
+  const pronunciation = document.createElement('p');
+  pronunciation.classList.add('pronunciationDiv');
 
-//   const type = document.createElement('p');
-//   type.classList.add('typeDiv');
+  const type = document.createElement('p');
+  type.classList.add('typeDiv');
 
-//   const description = document.createElement('p');
-//   description.classList.add('descriptionDiv');
+  const description = document.createElement('p');
+  description.classList.add('descriptionDiv');
 
-//   const mention = document.createElement('p');
-//   mention.classList.add('mentionDiv');
+  const mention = document.createElement('p');
+  mention.classList.add('mentionDiv');
 
-//   const etymology = document.createElement('p');
-//   etymology.classList.add('etymologyDiv');
+  const etymology = document.createElement('p');
+  etymology.classList.add('etymologyDiv');
 
-//   name.textContent = spell.name;
-//   card2.appendChild(name);
+  name.textContent = spell.name;
+  card2.appendChild(name);
 
-//   other_name.textContent = 'Other Name: ' + spell.other_name;
-//   card2.appendChild(other_name);
+  other_name.textContent = 'Other Name: ' + spell.other_name;
+  card2.appendChild(other_name);
 
-//   pronunciation.textContent = 'Pronunciation: ' + spell.pronunciation;
-//   card2.appendChild(pronunciation);
+  pronunciation.textContent = 'Pronunciation: ' + spell.pronunciation;
+  card2.appendChild(pronunciation);
 
-//   type.textContent = 'Type: ' + spell.spell_type;
-//   card2.appendChild(type);
+  type.textContent = 'Type: ' + spell.spell_type;
+  card2.appendChild(type);
 
-//   description.textContent = 'Description: ' + spell.description;
-//   card2.appendChild(description);
+  description.textContent = 'Description: ' + spell.description;
+  card2.appendChild(description);
 
-//   cardContainer2.appendChild(card2);
+  cardContainer2.appendChild(card2);
 
-// });
-// return (cardContainer2)
-// }
+});
+return (cardContainer2)
+}
 
-// function createPotion(){
-// const cardContainer3 = document.createElement('div');
-// cardContainer3.classList.add('card3');
-// potions.forEach(function (potion) {
+function createPotion(potions){
+    const cardContainer3 = document.createElement('div');
+    cardContainer3.classList.add('card3');
+    potions.forEach(function (potion) {
 
-//   const card3 = document.createElement('div');
-//   card3.classList.add('cardDiv3');
+  const card3 = document.createElement('div');
+  card3.classList.add('cardDiv3');
 
-//   const name = document.createElement('h2');
-//   name.classList.add('nameDiv');
+  const name = document.createElement('h2');
+  name.classList.add('nameDiv');
   
-//   const description = document.createElement('p');
-//   description.classList.add('descriptionDiv');
+  const description = document.createElement('p');
+  description.classList.add('descriptionDiv');
   
-//   name.textContent = potion.name;
-//   card3.appendChild(name);
+  name.textContent = potion.name;
+  card3.appendChild(name);
   
-//   description.textContent = 'Description: ' + potion.description;
-//   card3.appendChild(description);
+  description.textContent = 'Description: ' + potion.description;
+  card3.appendChild(description);
   
-//   cardContainer3.appendChild(card3);
+  cardContainer3.appendChild(card3);
   
-//   });
-// return (cardContainer3)
-// }
+  });
+return (cardContainer3)
+}
 
-// function createBook(){
-//   const cardContainer4 = document.createElement('div');
-//   books.forEach(function (book) {
+function createBook(books){
+  const cardContainer4 = document.createElement('div');
+  books.forEach(function (book) {
       
-//     const card4 = document.createElement('div');
-//     card4.classList.add('cardDiv4');
+    const card4 = document.createElement('div');
+    card4.classList.add('cardDiv4');
     
-//     const name = document.createElement('h2');
-//     name.classList.add('nameDiv');
+    const name = document.createElement('h2');
+    name.classList.add('nameDiv');
       
-//     const id = document.createElement('p');
-//     id.classList.add('idDiv');
+    const id = document.createElement('p');
+    id.classList.add('idDiv');
       
-//     const releaseDay = document.createElement('p');
-//     releaseDay.classList.add('releaseDayDiv');
+    const releaseDay = document.createElement('p');
+    releaseDay.classList.add('releaseDayDiv');
       
-//     const author = document.createElement('p');
-//     author.classList.add('authorDiv');
+    const author = document.createElement('p');
+    author.classList.add('authorDiv');
 
-//     const description = document.createElement('p');
-//     description.classList.add('descriptionDiv');
+    const description = document.createElement('p');
+    description.classList.add('descriptionDiv');
       
-//     name.textContent = book.title;
-//     card4.appendChild(name);
+    name.textContent = book.title;
+    card4.appendChild(name);
       
-//     id.textContent = 'Other Number: ' + book.id;
-//     card4.appendChild(id);
+    id.textContent = 'Other Number: ' + book.id;
+    card4.appendChild(id);
       
-//     releaseDay.textContent = 'Release Day: ' + book.releaseDay;
-//     card4.appendChild(releaseDay);
+    releaseDay.textContent = 'Release Day: ' + book.releaseDay;
+    card4.appendChild(releaseDay);
       
-//     author.textContent = 'Author: ' + book.author;
-//     card4.appendChild(author);
+    author.textContent = 'Author: ' + book.author;
+    card4.appendChild(author);
 
-//     description.textContent = 'Description: ' + book.description;
-//     card4.appendChild(description);
+    description.textContent = 'Description: ' + book.description;
+    card4.appendChild(description);
       
-//     cardContainer4.appendChild(card4);
+    cardContainer4.appendChild(card4);
       
-//   });  
-//   return (cardContainer4)
-// }
+  });  
+  return (cardContainer4)
+}
 
 
-export {filterHouse, filterSpells};
+export {filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook};
 
