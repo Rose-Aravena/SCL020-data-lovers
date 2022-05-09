@@ -1,6 +1,6 @@
 import data from './data/harrypotter/harry.js';
 
-import { filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, ordenarTexto} from './data.js';
+import { filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook} from './data.js';
 
 const alohomoraButton = document.getElementById('alohomoraB');
 if (alohomoraButton) {
@@ -40,7 +40,7 @@ if(pathName=="/src/characters.html"){
   const cardContainer = document.getElementById('cardContainer');
   cardContainer.appendChild(cardCharacters)
   filterHouseStart();
-  alphabetOrder()
+  // alphabetOrder()
 }
 if (pathName=="/src/spells.html"){
   const cardSpells= createSpell(spells);
@@ -114,9 +114,9 @@ spellsSelect.addEventListener("change", function () {
   });
 }
 
-function alphabetOrder(){
-  const alphabet = document.getElementById('alphabet')
-  alphabet.addEventListener("click", ordenarTexto(characters))}; 
+// function alphabetOrder(){
+//   const alphabet = document.getElementById('alphabet')
+//   alphabet.addEventListener("click", ordenarTexto(characters))}; 
 
     // const orderText= ordenarTexto(characters)
     // const cardContainer = document.getElementById('cardContainer');
