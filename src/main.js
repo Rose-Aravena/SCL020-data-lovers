@@ -1,6 +1,6 @@
 import data from './data/harrypotter/harry.js';
 
-import { filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook} from './data.js';
+import { filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, ordenarTexto} from './data.js';
 
 const alohomoraButton = document.getElementById('alohomoraB');
 if (alohomoraButton) {
@@ -40,6 +40,7 @@ if(pathName=="/src/characters.html"){
   const cardContainer = document.getElementById('cardContainer');
   cardContainer.appendChild(cardCharacters)
   filterHouseStart();
+  alphabetOrder()
 }
 if (pathName=="/src/spells.html"){
   const cardSpells= createSpell(spells);
@@ -89,6 +90,7 @@ houseSelect.addEventListener("change", function () {
   });
 });
 }
+
 function filterSpellStart(){
 const spellsSelect = document.getElementById('spellsS')
 spellsSelect.addEventListener("change", function () {
@@ -111,3 +113,61 @@ spellsSelect.addEventListener("change", function () {
     });
   });
 }
+
+function alphabetOrder(){
+  const alphabet = document.getElementById('alphabet')
+  alphabet.addEventListener("click", ordenarTexto(characters))}; 
+
+    // const orderText= ordenarTexto(characters)
+    // const cardContainer = document.getElementById('cardContainer');
+    // cardContainer.innerHTML = '';
+
+    // orderText.forEach(function (character) {
+    //   cardContainer.innerHTML +=
+    //     `<div class='cardDiv'>
+    //       <div class='photo'>
+    //         <img class='avatar' src='imagenes/Mago2.png'> </img>
+    //       </div>
+    //       <div class='textDiv'>
+    //         <h2 class='nameDiv'> ${character.name}</h2> 
+    //         <p class='birthDiv'> Birth: ${character.birth}</p>
+    //         <p class='ancestryDiv'> Ancestry: ${character.ancestry}</p>
+    //         <p class='houseDiv'> House: ${character.house}</p>
+    //         <p class='wandDiv'> Wand: ${character.wand}</p>
+    //         <p class='patronusDiv'>Patronus: ${character.patronus}</p>
+    //         <p class='bookFeaturedDiv'>Book feature: ${character.books_featured_in}</p>
+    //         <p class='deathDiv'>Death: ${character.death}</p>
+    //       </div>
+    //     </div>`
+    // });
+  // })};
+// function filterCharactersStart(){
+//   const houseSelect = document.getElementById('houseS')
+//   if (houseSelect.addEventListener("change")){
+  
+//   //  function (){
+//     const house = houseSelect.options[houseSelect.selectedIndex].text;
+//     const result = filterHouse(characters, house);
+
+// const cardContainer = document.getElementById('cardContainer');
+//   cardContainer.innerHTML = '';
+
+//   result.forEach(function (character) {
+//     cardContainer.innerHTML +=
+//       `<div class='cardDiv'>
+//         <div class='photo'>
+//           <img class='avatar' src='imagenes/Mago2.png'> </img>
+//         </div>
+//         <div class='textDiv'>
+//           <h2 class='nameDiv'> ${character.name}</h2> 
+//           <p class='birthDiv'> Birth: ${character.birth}</p>
+//           <p class='ancestryDiv'> Ancestry: ${character.ancestry}</p>
+//           <p class='houseDiv'> House: ${character.house}</p>
+//           <p class='wandDiv'> Wand: ${character.wand}</p>
+//           <p class='patronusDiv'>Patronus: ${character.patronus}</p>
+//           <p class='bookFeaturedDiv'>Book feature: ${character.books_featured_in}</p>
+//           <p class='deathDiv'>Death: ${character.death}</p>
+//         </div>
+//       </div>`
+//   });
+//   }
