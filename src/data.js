@@ -1,9 +1,22 @@
 
+function ordenarTexto(characters) {
+  characters.sort((a, b) => {
+    if (a.name.toLowerCase() > b.name.toLowerCase()){
+      return 1;
+    }
+    if(a.name.toLowerCase() < b.name.toLowerCase()){
+      return -1;
+    }
+    return 0;
+  }
+ )};
+ 
+ console.log(characters);
+
 
 const filterHouse = (characters,house)=>{
  return characters.filter(character => character.house === house);
 }
-// export {filterHouse};
 
 const filterSpells = (spells,spell_type)=>{
  return spells.filter(spell => spell.spell_type === spell_type);
@@ -207,5 +220,5 @@ function createBook(books){
 }
 
 
-export {filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook};
+export {filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, ordenarTexto};
 
