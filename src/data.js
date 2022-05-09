@@ -10,8 +10,6 @@ function ordenarTexto(characters) {
     return 0;
   }
  )};
- 
- console.log(characters);
 
 
 const filterHouse = (characters,house)=>{
@@ -220,5 +218,5 @@ function createBook(books){
 }
 
 
-export {filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, ordenarTexto};
+export {filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook};
 

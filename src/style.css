@@ -1,4 +1,13 @@
 
+body{
+  cursor: url(imagenes/varita.cur),
+  auto;
+}  
+  a:hover{
+    cursor: url(imagenes/Kedavra.cur),
+  auto;
+  
+}
 .text{
     font-family: 'Harry Potter', sans-serif;
     font-weight: 400;
@@ -87,6 +96,7 @@
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
+  text-align: justify;
 }
 
 #title{
@@ -153,10 +163,21 @@ font-size: 1.4vw ;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
-  margin-top: 3%;
+  margin-top: 1%;
   text-align: center;
 }
-
+.root2::-webkit-scrollbar{     /* para el acroll*/
+  width: 10px;
+  
+}
+.root2::-webkit-scrollbar-track { 
+  background: rgba(0, 5, 8, 0.4)
+  /* border-radius: 50px; */
+}
+.root2::-webkit-scrollbar-thumb{ 
+  background: #EBA83A;
+  border-radius: 50px;
+}
 .card{
   margin-left: 0.3vh;
   margin-right: 0.3vh;
@@ -228,7 +249,6 @@ font-size: 1.4vw ;
   }
 .divFilter{
   background-color: rgb(6, 0, 0, 50%);
-  width: 100%;
   height: auto;
   padding: 1%;
   margin-bottom: 1%;
@@ -740,6 +760,8 @@ width: 140px;
   }
   .info{
   align-items: center;
+  line-height: 1.5;
+  margin-bottom: 15px;
   }   
 
   /* footer*/
@@ -779,12 +801,42 @@ width: 140px;
 }
 
 @media only screen and (max-width: 320px) {
-  .cardDiv {
-    height: 60px;
-    width: 40px;
+  .cardDiv, .cardDiv4, .cardDiv3, .cardDiv2{
+    flex-direction: column;
+    height: auto;
+    width: 200px;
+  }
+  .nameDiv{
+    font-size: 1em;
+  }
+  p{
+    font-size: 0.8em;
+    padding: 0px;
   }
   h3{
     font-size: 0.9em;
+  }
+  .avatar{
+    height: 40px;
+    width: 40px;
+  }
+  .filterLabel{
+    font-size: 0.5em;
+  }
+  .houseSelect{
+    width: 80px;
+  }
+  #titleChar,#titleSpells, #titlePot, #title, #titleBooks{
+    font-size: 1.2em;
+  }
+  .logo{
+    font-size: 1em;
+  }
+  .divFilter{
+    align-content: flex-start;
+  }
+  footer{
+    font-size: 0.8em;
   }
 }
 
@@ -796,10 +848,11 @@ width: 140px;
   .info{
     font-size: 0.6em;
   }
-  /* para el characterhtml */
-  #titleChar{
+  /* para los titulos*/
+  #titleChar,#titleSpells, #titlePot, #title, #titleBooks{
     font-size: 1.8em;
   }
+  /* para characters*/
   .filterLabel{
     font-size: 0.5em;
   }
@@ -810,8 +863,9 @@ width: 140px;
     width: 330px;
   }
   .cardDiv {
+    flex-direction: column;
     height: auto;
-    width: 200px;
+    width: 260px;
   }
   .avatar{
     height: 60px;
@@ -821,7 +875,8 @@ width: 140px;
     font-size: 1em;
   }
   p{
-    font-size: 0.5em;
+    font-size: 0.8em;
+    padding: 0px;
   }
    /* para el potionshtml */
    .cardDiv3{
@@ -912,6 +967,10 @@ width: 140px;
   footer{
     font-size: 1.3em;
   }
+  .root2{
+    width: 1000px;
+    align-items: center;
+  }
    /* para el characterhtml */
    .filterLabel{
     font-size: 1em;
@@ -934,14 +993,15 @@ width: 140px;
   }
   p{
     font-size: 1.3em;
+    line-height: 20px;
   }
    /* para el spellshtml */
    .card2{
-     width: 700px;
+     width: 900px;
    }
    .cardDiv2{
      height: auto;
-     width: 600px;
+     width: 800px;
     padding: 20px;
   }
    /* para el potionshtml */
@@ -950,9 +1010,16 @@ width: 140px;
     margin: 30px 10px;
   }
 /* para el bookshtml */
+  .card4{
+  width: 900px;
+  }
   .cardDiv4{
+    width: 800px;
     padding: 30px;
     margin: 30px 10px;
+  }
+  .descriptionDiv{
+    line-height: 25px;
   }
 }
 @media (min-width: 1450px) and (max-width: 3500px) {
@@ -970,12 +1037,16 @@ width: 140px;
   footer{
     font-size: 1.2em;
   }
+  .root2{
+    width: 1600px;
+    align-items: center;
+  }
   /* para el characterhtml */
   .filterLabel{
     font-size: 1.1em;
   }
   .card{
-    width: 2200px;
+    width: 2400px;
   }
   .cardDiv{
     height: auto;
@@ -986,14 +1057,15 @@ width: 140px;
     width: 250px;
   }
   .nameDiv{
-    font-size: 3em;
+    font-size: 2.5em;
   }
   p{
     font-size: 1.5em;
+    line-height: 25px;
   }
   /* para el spellshtml */
   .cardDiv2{
-    padding: 50px;
+    padding: 10px;
   }
    /* para el potionshtml */
    .cardDiv3{
@@ -1006,4 +1078,12 @@ width: 140px;
   .nameDiv{
     font-size: 3.8em;
   }
+}
+
+.descriptionDiv{
+  text-align: justify;
+
+}
+#titleChar,#titleSpells, #titlePot, #title, #titleBooks, .navBar, .root2, .root1, .divFilter{
+  user-select: none;
 }
