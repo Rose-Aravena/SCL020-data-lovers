@@ -901,6 +901,9 @@ width: 140px;
   .info{
     font-size: 1em;
   }
+  .contDiv{
+    font-size: 1em;
+  }
   li{
     font-size: 1.2em;
     padding: 5px;
@@ -958,6 +961,9 @@ width: 140px;
     font-size: 2em;
   }
   .info{
+    font-size: 1.5em;
+  }
+  h4{
     font-size: 1.5em;
   }
   li{
@@ -1030,6 +1036,9 @@ width: 140px;
   .info{
     font-size: 1.8em;
   }
+  h4{
+    font-size: 1.8em;
+  }
   li{
     font-size: 2em;
     padding: 16px;
@@ -1086,4 +1095,19 @@ width: 140px;
 }
 #titleChar,#titleSpells, #titlePot, #title, #titleBooks, .navBar, .root2, .root1, .divFilter{
   user-select: none;
+}
+
+.contDiv{
+padding: 5px;
+}
+/* 
+.cont{
+font-size: 1.1vw;
+font-family: 'Hina Mincho', serif;
+} */
+
+h4{
+  align-items: center;
+  line-height: 1.5;
+  margin-bottom: 15px;
 }
