@@ -1,6 +1,6 @@
 import data from './data/harrypotter/harry.js';
 
-import { filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook} from './data.js';
+import { filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, ordenarTexto} from './data.js';
 
 const alohomoraButton = document.getElementById('alohomoraB');
 if (alohomoraButton) {
@@ -24,7 +24,6 @@ if (spellsButton) {
 }
 
 let characters = data.characters;
-
 let spells = data.spells;
 
 let potions = data.potions;
@@ -38,6 +37,7 @@ const pathName = window.location.pathname
 if(pathName=="/src/characters.html"){
   const cardCharacters= createCharacter(characters);
   const cardContainer = document.getElementById('cardContainer');
+  console.log(cardCharacters)
   cardContainer.appendChild(cardCharacters)
   filterHouseStart();
   // alphabetOrder()
@@ -65,12 +65,14 @@ const houseSelect = document.getElementById('houseS')
 houseSelect.addEventListener("change", function () {
   
   const house = houseSelect.options[houseSelect.selectedIndex].text;
-  const resulHouse = filterHouse(characters, house);
+  let resultHouse = filterHouse(characters, house);
+  resultHouse = ordenarTexto(resultHouse);
+
 
   const cardContainer = document.getElementById('cardContainer');
   cardContainer.innerHTML = '';
 
-  resulHouse.forEach(function (character) {
+  resultHouse.forEach(function (character) {
     cardContainer.innerHTML +=
       `<div class='cardDiv'>
         <div class='photo'>
@@ -115,59 +117,39 @@ spellsSelect.addEventListener("change", function () {
 }
 
 // function alphabetOrder(){
-//   const alphabet = document.getElementById('alphabet')
-//   alphabet.addEventListener("click", ordenarTexto(characters))}; 
-
-    // const orderText= ordenarTexto(characters)
-    // const cardContainer = document.getElementById('cardContainer');
-    // cardContainer.innerHTML = '';
-
-    // orderText.forEach(function (character) {
-    //   cardContainer.innerHTML +=
-    //     `<div class='cardDiv'>
-    //       <div class='photo'>
-    //         <img class='avatar' src='imagenes/Mago2.png'> </img>
-    //       </div>
-    //       <div class='textDiv'>
-    //         <h2 class='nameDiv'> ${character.name}</h2> 
-    //         <p class='birthDiv'> Birth: ${character.birth}</p>
-    //         <p class='ancestryDiv'> Ancestry: ${character.ancestry}</p>
-    //         <p class='houseDiv'> House: ${character.house}</p>
-    //         <p class='wandDiv'> Wand: ${character.wand}</p>
-    //         <p class='patronusDiv'>Patronus: ${character.patronus}</p>
-    //         <p class='bookFeaturedDiv'>Book feature: ${character.books_featured_in}</p>
-    //         <p class='deathDiv'>Death: ${character.death}</p>
-    //       </div>
-    //     </div>`
-    // });
-  // })};
-// function filterCharactersStart(){
-//   const houseSelect = document.getElementById('houseS')
-//   if (houseSelect.addEventListener("change")){
+//   const alphabet = document.getElementById('orden')
+//   alphabet.addEventListener("change", function(){
+//     const order = alphabet.options[alphabet.selectedIndex].text;
+//     // characterFilter = filterHouse(characters, house);
   
-//   //  function (){
-//     const house = houseSelect.options[houseSelect.selectedIndex].text;
-//     const result = filterHouse(characters, house);
-
-// const cardContainer = document.getElementById('cardContainer');
-//   cardContainer.innerHTML = '';
-
-//   result.forEach(function (character) {
-//     cardContainer.innerHTML +=
-//       `<div class='cardDiv'>
-//         <div class='photo'>
-//           <img class='avatar' src='imagenes/Mago2.png'> </img>
-//         </div>
-//         <div class='textDiv'>
-//           <h2 class='nameDiv'> ${character.name}</h2> 
-//           <p class='birthDiv'> Birth: ${character.birth}</p>
-//           <p class='ancestryDiv'> Ancestry: ${character.ancestry}</p>
-//           <p class='houseDiv'> House: ${character.house}</p>
-//           <p class='wandDiv'> Wand: ${character.wand}</p>
-//           <p class='patronusDiv'>Patronus: ${character.patronus}</p>
-//           <p class='bookFeaturedDiv'>Book feature: ${character.books_featured_in}</p>
-//           <p class='deathDiv'>Death: ${character.death}</p>
-//         </div>
-//       </div>`
-//   });
+//     // const ordenar = ordenarTexto(resulHouse);
+//   if(order =='A-Z'){
+//     characterFilter = ordenarTexto(characters)
+//   }else {
+//     characterFilter = ordenarTextoZA(characters)
 //   }
+
+//     const cardContainer = document.getElementById('cardContainer');
+//     cardContainer.innerHTML = '';
+  
+//     characterFilter.forEach(function (character) {
+//       cardContainer.innerHTML +=
+//         `<div class='cardDiv'>
+//           <div class='photo'>
+//             <img class='avatar' src='imagenes/Mago2.png'> </img>
+//           </div>
+//           <div class='textDiv'>
+//             <h2 class='nameDiv'> ${character.name}</h2> 
+//             <p class='birthDiv'> Birth: ${character.birth}</p>
+//             <p class='ancestryDiv'> Ancestry: ${character.ancestry}</p>
+//             <p class='houseDiv'> House: ${character.house}</p>
+//             <p class='wandDiv'> Wand: ${character.wand}</p>
+//             <p class='patronusDiv'>Patronus: ${character.patronus}</p>
+//             <p class='bookFeaturedDiv'>Book feature: ${character.books_featured_in}</p>
+//             <p class='deathDiv'>Death: ${character.death}</p>
+//           </div>
+//         </div>`
+//     });
+//   })}; 
+
+
