@@ -4,7 +4,7 @@ body{
   auto;
 }  
   a:hover{
-    cursor: url(imagenes/Kedavra.cur),
+    cursor: url(imagenes/hedwige.cur),
   auto;
   
 }
@@ -171,8 +171,8 @@ font-size: 1.4vw ;
   
 }
 .root2::-webkit-scrollbar-track { 
-  background: rgba(0, 5, 8, 0.4)
-  /* border-radius: 50px; */
+  background: rgba(0, 5, 8, 0.4);
+  border-radius: 50px;
 }
 .root2::-webkit-scrollbar-thumb{ 
   background: #EBA83A;
@@ -955,7 +955,7 @@ width: 140px;
       margin: 10px 5px;
     }
 }
-@media (min-width: 821px) and (max-width: 1440px) {
+@media (min-width: 821px) and (max-width: 1800px) {
 /* para el menuhtml */
   h3{
     font-size: 2em;
@@ -974,7 +974,7 @@ width: 140px;
     font-size: 1.3em;
   }
   .root2{
-    width: 1000px;
+    width: 1200px;
     align-items: center;
   }
    /* para el characterhtml */
@@ -1028,7 +1028,7 @@ width: 140px;
     line-height: 25px;
   }
 }
-@media (min-width: 1450px) and (max-width: 3500px) {
+@media (min-width: 1900px) and (max-width: 3500px) {
   /* para el menuhtml */
   h3{
     font-size: 3.5em;
@@ -1047,7 +1047,7 @@ width: 140px;
     font-size: 1.2em;
   }
   .root2{
-    width: 1600px;
+    width: 1500px;
     align-items: center;
   }
   /* para el characterhtml */

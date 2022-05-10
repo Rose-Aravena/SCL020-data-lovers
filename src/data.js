@@ -8,10 +8,9 @@ function ordenarTexto(characters) {
       return -1;
     }
     return 0;
-  }
- )};
-
-
+  })
+  return characters;
+ };
 const filterHouse = (characters,house)=>{
  return characters.filter(character => character.house === house);
 }
@@ -241,5 +240,6 @@ function createFunfacts(funFacts){
 return (funfactsCont)
 }
 
-export {filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, createFunfacts};
+export {filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, ordenarTexto, createFunfacts};
+
 
