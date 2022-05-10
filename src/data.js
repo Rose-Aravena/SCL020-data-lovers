@@ -100,7 +100,6 @@ function createSpell(spells){
   const cardContainer2 = document.createElement('div');
   cardContainer2.classList.add('card2');
   spells.forEach(function (spell) {
-  //const cardContainer2 = document.getElementById('cardContainer2');
 
   const card2 = document.createElement('div');
   card2.classList.add('cardDiv2');
@@ -216,6 +215,31 @@ function createBook(books){
   return (cardContainer4)
 }
 
+function createFunfacts(funFacts){
+  const funfactsCont = document.createElement('div');
+  funfactsCont.classList.add('cont');
+  funFacts.forEach(function (funFacts) {
 
-export {filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, ordenarTexto};
+    const cont = document.createElement('div');
+    cont.classList.add('contDiv');
+
+    const type = document.createElement('h4');
+    type.classList.add('typeFFDiv');
+
+    const content = document.createElement('p');
+    content.classList.add('contentDiv');
+
+    type.textContent = 'Fact: ' + funFacts.type;
+    cont.appendChild(type);
+
+    content.textContent = 'Description: ' + funFacts.content;
+    cont.appendChild(content);
+
+    funfactsCont.appendChild(cont);
+    });
+return (funfactsCont)
+}
+
+export {filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, ordenarTexto, createFunfacts};
+
 

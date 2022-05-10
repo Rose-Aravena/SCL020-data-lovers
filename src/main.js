@@ -1,6 +1,7 @@
 import data from './data/harrypotter/harry.js';
 
-import { filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, ordenarTexto} from './data.js';
+import { filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, ordenarTexto, createFunfacts} from './data.js';
+
 
 const alohomoraButton = document.getElementById('alohomoraB');
 if (alohomoraButton) {
@@ -34,6 +35,14 @@ let funFacts = data.funFacts;
 
 
 const pathName = window.location.pathname
+
+if(pathName=="/src/menu.html"){
+  const cont= createFunfacts(funFacts);
+  const funfactsCont = document.getElementById('funfactsCont');
+  funfactsCont.appendChild(cont)
+  createFunfacts();
+}
+
 if(pathName=="/src/characters.html"){
   const cardCharacters= createCharacter(characters);
   const cardContainer = document.getElementById('cardContainer');
