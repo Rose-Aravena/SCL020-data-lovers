@@ -1097,17 +1097,8 @@ width: 140px;
   user-select: none;
 }
 
-.contDiv{
-padding: 5px;
-}
-/* 
-.cont{
-font-size: 1.1vw;
-font-family: 'Hina Mincho', serif;
-} */
-
 h4{
   align-items: center;
   line-height: 1.5;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
