@@ -219,6 +219,7 @@ function createBook(books){
 function createFunfacts(funFacts){
   const funfactsCont = document.createElement('div');
   funfactsCont.classList.add('cont');
+  funFacts.splice(0, 3);
   funFacts.forEach(function (funFacts) {
 
     const cont = document.createElement('div');
@@ -230,10 +231,10 @@ function createFunfacts(funFacts){
     const content = document.createElement('p');
     content.classList.add('contentDiv');
 
-    type.textContent = 'Fact: ' + funFacts.type;
+    type.textContent = '• ' + funFacts.type + ':';
     cont.appendChild(type);
 
-    content.textContent = 'Description: ' + funFacts.content;
+    content.textContent = funFacts.content;
     cont.appendChild(content);
 
     funfactsCont.appendChild(cont);
