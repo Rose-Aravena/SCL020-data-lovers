@@ -46,7 +46,7 @@ if(pathName=="/src/menu.html"){
 if(pathName=="/src/characters.html"){
   const cardCharacters= createCharacter(characters);
   const cardContainer = document.getElementById('cardContainer');
-  console.log(cardCharacters)
+  // console.log(cardCharacters)
   cardContainer.appendChild(cardCharacters)
   filterHouseStart();
   // alphabetOrder()
