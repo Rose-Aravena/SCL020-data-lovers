@@ -36,14 +36,14 @@ let funFacts = data.funFacts;
 
 const pathName = window.location.pathname
 
-if(pathName=="/src/menu.html"){
+if(pathName.includes('menu')){
   const cont= createFunfacts(funFacts);
   const funfactsCont = document.getElementById('funfactsCont');
   funfactsCont.appendChild(cont)
   createFunfacts();
 }
 
-if(pathName=="/src/characters.html"){
+if(pathName.includes("characters")){
   const cardCharacters= createCharacter(characters);
   const cardContainer = document.getElementById('cardContainer');
   // console.log(cardCharacters)
@@ -51,18 +51,18 @@ if(pathName=="/src/characters.html"){
   filterHouseStart();
   // alphabetOrder()
 }
-if (pathName=="/src/spells.html"){
+if (pathName.includes("spells")){
   const cardSpells= createSpell(spells);
   const cardContainer2 = document.getElementById('cardContainer2');
   cardContainer2.appendChild(cardSpells);
   filterSpellStart()
 }
-if (pathName=="/src/potions.html"){
+if (pathName.includes("potions")){
   const cardPotions= createPotion(potions);
   const cardContainer3 = document.getElementById('cardContainer3');
   cardContainer3.appendChild(cardPotions)
 }
-if (pathName=="/src/books.html"){
+if (pathName.includes("books")){
   const cardBooks= createBook(books);
   const cardContainer4 = document.getElementById('cardContainer4');
   cardContainer4.appendChild(cardBooks)
