@@ -1,0 +1,1104 @@
+
+body{
+  cursor: url(imagenes/varita.cur),
+  auto;
+}  
+  a:hover{
+    cursor: url(imagenes/hedwige.cur),
+  auto;
+  
+}
+.text{
+    font-family: 'Harry Potter', sans-serif;
+    font-weight: 400;
+    font-size: 5vw;
+    letter-spacing: 0.4vh;
+    color: #D4A571; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16.3vh;
+    text-shadow: 0 0 0.7vh #CE6C49, 0 0 1.04vh #CE6C49, 0 0 1.4vh #CE6C49, 0 0 2.08vh #CE6C49; 
+    
+}
+
+.neon{
+    padding: 10px;
+    animation: parpadear 2s infinite ;
+}
+.neon1{
+    padding: 10px;
+    animation: parpadear 2.1s infinite ;
+}
+.neon2{
+    padding: 10px;
+    animation: parpadear 2.2s infinite ;
+}
+.neon3{
+    padding: 10px;
+    animation: parpadear 2.3s infinite ;
+}
+.neon4{
+    padding: 10px;
+    animation: parpadear 2.4s infinite ;
+}
+    @keyframes parpadear {
+        to{
+           text-shadow: none
+        }
+        
+    }
+    
+.alohomoraButton{
+    background-color: rgba(196, 202, 198, 3%);
+    font-family: 'Hina Mincho', serif;
+    letter-spacing: 0.4vh;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5vh;
+    margin-bottom: auto;
+    padding: 0.4vh 1.7vh;
+    text-align: center;
+    font-size: 2.3vw;
+    border-radius: 1.4vh;
+    text-shadow: 0 0 5px rgb(66, 194, 255), 0 0 15px rgb(133, 244, 255), 0 0 20px rgb(184, 255, 249), 0 0 40px rgb(239, 255, 253);
+    border-color: rgba(196, 202, 198, 10%);
+    animation: parpadear 2s infinite ;
+    
+  }
+  .alohomoraButton:hover{
+      background: rgba(66, 194, 255, 30%);
+  }
+
+#index{
+    background-image: url('imagenes/INDEX.png');
+    background-size: cover ;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#menu{
+    background-image: url('imagenes/MENU.png');
+    background-size: cover ;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.root1{
+  background-color: rgba(43, 43, 43, 90%);
+  color: #D4A571;
+  width: 70%;
+  height: 70%;
+  padding: 5%;
+  margin-top: 5%; 
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+
+#title{
+  display:flex;
+  text-align: start;
+  color: #EBA83A;
+  margin-top: 5%;
+  text-shadow: 2px 2px 5px silver;
+  font-family: 'Harry Potter', sans-serif;
+  font-weight: 400;
+  font-size: 4.6vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.audio{
+  opacity: 0.1; 
+}
+
+p{
+  margin: 0.5px;
+  padding: 5px;
+  font-size: 1.1vw;
+}
+
+h2{
+margin: 1px; 
+padding: 5px; 
+font-size: 1.4vw ;
+}
+
+#characters{
+  background-image: url('imagenes/VARITAS.jpg');
+  background-size: cover ;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: auto;
+}
+
+#titleChar{
+  display:flex;
+  text-align: start;
+  color: #b02626;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-family: 'Harry Potter', sans-serif;
+  font-weight: 400;
+  font-size: 5vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.root2{
+  background-color: rgba(0, 5, 8, 0.4);
+  overflow: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-top: 1%;
+  text-align: center;
+}
+.root2::-webkit-scrollbar{     /* para el acroll*/
+  width: 10px;
+  
+}
+.root2::-webkit-scrollbar-track { 
+  background: rgba(0, 5, 8, 0.4);
+  border-radius: 50px;
+}
+.root2::-webkit-scrollbar-thumb{ 
+  background: #EBA83A;
+  border-radius: 50px;
+}
+.card{
+  margin-left: 0.3vh;
+  margin-right: 0.3vh;
+  font-family: 'Hina Mincho', serif;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-top: 3%;
+  margin-bottom: 250px;
+  border-radius: 1.3vh;
+  text-align: center;
+  max-height: 26vh;
+  max-width: 134vh;
+
+}
+
+.cardDiv{
+  margin-left: 1.3vh;
+  margin-right: 1.3vh;
+  font-family: 'Hina Mincho', serif;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+  width: 85vh;
+  height: auto;
+  text-align: center;
+  margin-top: 1.3vh;
+  margin-bottom: 1.3vh;
+  border-radius: 15px;
+  padding: 5px;
+  background-image: url('imagenes/pergamino.jpg');
+  background-size: cover ;
+  background-position: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  align-content: center;
+
+}
+
+.menuButton{
+    background-color: rgba(129, 41, 41, 0.653);
+    font-family: 'Hina Mincho', serif;
+    letter-spacing: 2px;
+    /* justify-content: center; */
+    /* flex-flow: row wrap; */
+    display: grid;
+    /* align-content: center;
+    align-items: center; */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 20px 25px;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    font-size: 1.8vw;
+    border-radius: 20px;
+    text-shadow: 0 0 5px rgb(255, 195, 66), 0 0 15px rgb(255, 249, 133), 0 0 20px rgb(255, 234, 184), 0 0 40px rgb(255, 251, 239);
+    margin: 20px;
+    border-color: rgba(196, 202, 198, 10%);
+    animation: parpadear 2s infinite ;
+    box-shadow: 0 0 5px #060000;
+  }
+  .menuButton:hover{
+      background: rgba(255, 66, 66, 0.3);
+  }
+.divFilter{
+  background-color: rgb(6, 0, 0, 50%);
+  height: auto;
+  padding: 1%;
+  margin-bottom: 1%;
+  align-content: inherit;
+
+}
+
+.filterLabel{
+    color: white;
+    font-size: 1vw;
+    margin-left: 65%;
+    line-height: 1.3;
+}
+.houseSelect, .spellsSelect, .potionsSelect, .booksSelect{
+  font-size: 1vw;
+  font-family: 'Hina Mincho', serif;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  width: 400px;
+  max-width: 150px; 
+  box-sizing: border-box;
+  border: 1px solid rgba(201, 2, 2, 0.769);
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+  border-radius: .3em;
+  background-color: #fff; 
+}
+
+.houseSelect::-ms-expand {
+    display: none;
+  }
+.houseSelect:hover {
+    border-color: #888;
+  }
+.houseSelect:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(248, 219, 0, 0.806);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+    outline: none;
+  }
+.houseSelect option {
+    font-weight:normal;
+  }
+
+#spells{
+  background-image: url('imagenes/Clubduelo.webp');
+  background-size: cover ;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: auto;
+}
+
+#titleSpells{
+  display:flex;
+  text-align: start;
+  color: #b02626;
+  margin-top: 5%;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-family: 'Harry Potter', sans-serif;
+  font-weight: 400;
+  font-size: 5vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card2{
+  margin-left: 1.3vh;
+  margin-right: 1.3vh;
+  font-family: 'Hina Mincho', serif;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 250px;
+  border-radius: 1.3vh;
+  text-align: center;
+  max-height: 26vh;
+  max-width: 134vh;
+}
+
+.cardDiv2{
+    margin-left: 1.3vh;
+    margin-right: 1.3vh;
+    font-family: 'Hina Mincho', serif;
+    display: flex;
+    flex-direction: column;
+    /* flex-flow: row wrap; */
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 107vh;
+    height: auto;
+    text-align: center;
+    margin-top: 1.3vh;
+    margin-bottom: 1.3vh;
+    border-radius: 15px;
+    padding: 5px;
+    background-image: url('imagenes/pergamino.jpg');
+    background-size: cover ;
+    background-position: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    align-content: center;
+
+}
+@media only screen and (max-width: 320px) {
+  .cardDiv2 {
+    height: auto;
+    width: 40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .cardDiv2 {
+    height: auto;
+    width: 250px;
+  }
+}
+@media only screen and (min-width:470px)and(max-width: 768px) {
+  .cardDiv2 {
+    height: auto;
+    width: 450px;
+  }
+}
+@media only screen and (min-width:760px) and (max-width: 1024px) {
+  .cardDiv2 {
+    height: auto;
+    width: 600px;
+  }
+}
+
+
+
+.spellsSelect::-ms-expand {
+    display: none;
+  }
+.spellsSelect:hover {
+    border-color: #888;
+  }
+.spellsSelect:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(248, 219, 0, 0.806);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+    outline: none;
+  }
+.spellsSelect option {
+    font-weight:normal;
+  }
+
+#potions{
+    background-image: url('imagenes/saladepociones.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: auto;
+  }
+
+#titlePot{
+    display:flex;
+    text-align: start;
+    color: #b02626;
+    margin-top: 5%;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-family: 'Harry Potter', sans-serif;
+    font-weight: 400;
+    font-size: 4.6vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card3{
+  margin-left: 1.3vh;
+  margin-right: 1.3vh;
+  font-family: 'Hina Mincho', serif;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 250px;
+  border-radius: 1.3vh;
+  text-align: center;
+  max-height: 26vh;
+  max-width: 134vh;
+}
+
+.cardDiv3{
+  margin-left: 1.3vh;
+  margin-right: 1.3vh;
+  font-family: 'Hina Mincho', serif;
+  display: flex;
+  flex-direction: column;
+  /* flex-flow: row wrap; */
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 70vh;
+  height: auto;
+  text-align: center;
+  margin-top: 1.3vh;
+  margin-bottom: 1.3vh;
+  border-radius: 15px;
+  padding: 5px;
+  background-image: url('imagenes/pergamino.jpg');
+  background-size: cover ;
+  background-position: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  align-content: center;
+
+}
+@media only screen and (max-width: 320px) {
+.cardDiv3 {
+  height: 60px;
+  width: 40px;
+}
+}
+@media only screen and (max-width: 480px) {
+.cardDiv3 {
+  height: 100px;
+  width: 80px;
+}
+}
+@media only screen and (max-width: 768px) {
+.cardDiv3 {
+  height: 140px;
+  width: 110px;
+}
+}
+@media only screen and (max-width: 1024px) {
+.cardDiv3 {
+  height: 170px;
+  width: 140px;
+}
+}
+
+#books{
+  background-image: url('imagenes/kingscross.webp');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: auto;
+}
+
+#titleBooks{
+  display:flex;
+  text-align: start;
+  color: #b02626;
+  margin-top: 5%;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-family: 'Harry Potter', sans-serif;
+  font-weight: 400;
+  font-size: 4.6vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card4{
+  margin-left: 1.3vh;
+  margin-right: 1.3vh;
+  font-family: 'Hina Mincho', serif;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 250px;
+  border-radius: 1.3vh;
+  text-align: center;
+  max-height: 26vh;
+  max-width: 134vh;
+}
+
+.cardDiv4{
+margin-left: 1.3vh;
+margin-right: 1.3vh;
+font-family: 'Hina Mincho', serif;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: black;
+width: 107vh;
+height: auto;
+text-align: center;
+margin-top: 1.3vh;
+margin-bottom: 1.3vh;
+border-radius: 15px;
+padding: 5px;
+background-image: url('imagenes/pergamino.jpg');
+background-size: cover ;
+background-position: center;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+align-content: center;
+
+}
+@media only screen and (max-width: 320px) {
+.cardDiv4 {
+height: 60px;
+width: 40px;
+}
+}
+@media only screen and (max-width: 480px) {
+.cardDiv4 {
+height: 100px;
+width: 80px;
+}
+}
+@media only screen and (max-width: 768px) {
+.cardDiv4 {
+height: 140px;
+width: 110px;
+}
+}
+@media only screen and (max-width: 1024px) {
+.cardDiv4 {
+height: 170px;
+width: 140px;
+}
+}
+
+  /* para la barra de menu */
+  .navBar{
+    display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(0, 0, 0, 90%);
+      border-radius: 10px;
+      margin: 1%;
+      padding: 1px;
+  }
+  .navBar a{
+    text-decoration: none;
+    color: #EBA83A;
+  }
+  .logo{
+    margin-right: 50px;
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 3vw;
+    margin-top: 0.7%;
+    letter-spacing: 5px;
+    margin-left: 1.5vw;
+    text-shadow: 2px 4px 6px silver;
+    animation: parpadear 1.5s infinite;
+  }
+  .listMenu{
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    margin-right: 2vw;
+    gap: 2.6vw;
+  }
+  #toggler, 
+  .navBar label{
+    display: none;
+    margin-right: 1vw;
+  }
+  @media (max-width: 600px){
+    .navMenu{
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+    }
+    .listMenu{
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .navBar label{
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      color: #EBA83A;
+    }
+    #toggler:checked ~ .navMenu{
+      max-height: 100%;
+    }
+  }
+  
+  /* burbujas */
+  .burbuja{
+    
+    border-radius: 50%;
+    background: #F6F54D;
+    opacity: .3;
+    position: absolute;
+    bottom: 0;
+    align-items: flex-end;
+  
+  animation: burbujas 5s linear infinite ;
+  }
+  .burbuja:nth-child(1){
+    width: 20px;
+    height: 30px;
+    left: 5%;
+    animation-duration: 4s;
+  }
+  .burbuja:nth-child(2){
+    width: 10px;
+    height: 20px;
+    left: 10%;
+    animation-duration: 4s;
+    animation-delay: 5.5s;
+  }
+  .burbuja:nth-child(3){
+    width: 15px;
+    height: 25px;
+    left: 15%;
+    animation-duration: 4s;
+    animation-delay: 2s;
+  }
+  .burbuja:nth-child(4){
+    width: 10px;
+    height: 20px;
+    left: 20%;
+    animation-duration: 4s;
+    animation-delay: 7s;
+  }
+  .burbuja:nth-child(5){
+    width: 20px;
+    height: 30px;
+    left: 25%;
+    animation-duration: 4s;
+    animation-delay: 4s;
+  }
+  .burbuja:nth-child(6){
+    width: 10px;
+    height: 20px;
+    left: 30%;
+    animation-duration: 4s;
+    animation-delay: 3.5s;
+  }
+  .burbuja:nth-child(7){
+    width: 5px;
+    height: 10px;
+    left: 35%;
+    animation-duration: 4s;
+    animation-delay: 4.5s;
+  }
+  .burbuja:nth-child(8){
+    width: 20px;
+    height: 30px;
+    left: 65%;
+    animation-duration: 4s;
+    animation-delay: 5.5s;
+  }
+  .burbuja:nth-child(9){
+    width: 10px;
+    height: 20px;
+    left: 70%;
+    animation-duration: 4s;
+    animation-delay: 2.5s;
+  }
+  .burbuja:nth-child(10){
+    width: 15px;
+    height: 25px;
+    left: 75%;
+    animation-duration: 4s;
+    animation-delay: 4s;
+  }
+  .burbuja:nth-child(11){
+    width: 25px;
+    height: 35px;
+    left: 80%;
+    animation-duration: 4s;
+    animation-delay: 5.2s;
+  }
+  .burbuja:nth-child(12){
+    width: 10px;
+    height: 20px;
+    left: 85%;
+    animation-duration: 4s;
+    animation-delay: 3.5s;
+  }
+  .burbuja:nth-child(13){
+    width: 20px;
+    height: 30px;
+    left: 90%;
+    animation-duration: 4s;
+    animation-delay: 1.5s;
+  }
+  .burbuja:nth-child(14){
+    width: 15px;
+    height: 25px;
+    left: 95%;
+    animation-duration: 4s;
+    
+  }
+  @keyframes burbujas{
+    0%{
+      bottom: 0;
+      opacity: 0;
+    }
+    50%{
+      opacity: .4;
+      background: #FEB139;
+    }
+    100%{
+      bottom: 100vh;
+      opacity: 0;
+      background: #F55353;
+    }
+  }
+  
+  /* pantalla menu */
+  .welcome{
+    align-items: center;
+  }
+  .info{
+  align-items: center;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  }   
+
+  /* footer*/
+  footer{
+    color: #ffffff;
+    font-family: 'Hina Mincho', serif;
+    padding: 1em 0;
+    text-align: center;
+    margin-top: auto;
+  
+  }
+
+  body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+.avatar{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border: #222;
+  box-shadow: 4px 8px 10px rgb(33, 32, 32);
+  margin: 0px 30px;
+}
+.photo{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  
+}
+
+.textDiv{
+  justify-content: center;
+}
+
+@media only screen and (max-width: 320px) {
+  .cardDiv, .cardDiv4, .cardDiv3, .cardDiv2{
+    flex-direction: column;
+    height: auto;
+    width: 200px;
+  }
+  .nameDiv{
+    font-size: 1em;
+  }
+  p{
+    font-size: 0.8em;
+    padding: 0px;
+  }
+  h3{
+    font-size: 0.9em;
+  }
+  .avatar{
+    height: 40px;
+    width: 40px;
+  }
+  .filterLabel{
+    font-size: 0.5em;
+  }
+  .houseSelect{
+    width: 80px;
+  }
+  #titleChar,#titleSpells, #titlePot, #title, #titleBooks{
+    font-size: 1.2em;
+  }
+  .logo{
+    font-size: 1em;
+  }
+  .divFilter{
+    align-content: flex-start;
+  }
+  footer{
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 319px) and (max-width: 480px) {
+  /* para el menuhtml */
+  h3{
+    font-size: 1.1em;
+  }
+  .info{
+    font-size: 0.6em;
+  }
+  /* para los titulos*/
+  #titleChar,#titleSpells, #titlePot, #title, #titleBooks{
+    font-size: 1.8em;
+  }
+  /* para characters*/
+  .filterLabel{
+    font-size: 0.5em;
+  }
+  .houseSelect{
+    width: 50px;
+  }
+  .root2{
+    width: 330px;
+  }
+  .cardDiv {
+    flex-direction: column;
+    height: auto;
+    width: 260px;
+  }
+  .avatar{
+    height: 60px;
+    width: 60px;
+  }
+  .nameDiv{
+    font-size: 1em;
+  }
+  p{
+    font-size: 0.8em;
+    padding: 0px;
+  }
+   /* para el potionshtml */
+   .cardDiv3{
+    height: auto;
+    width: 250px;
+    padding: 10px 20px;
+    margin: 10px 30px;
+  }
+/* para el bookshtml */
+  .cardDiv4{
+    height: auto;
+    width: 250px;
+    padding: 10px;
+    margin: 10px 5px;
+  }
+}
+@media (min-width: 479px)  and (max-width: 820px) {
+  /* para el menuhtml */
+  h3{
+    font-size: 1.4em;
+  }
+  .info{
+    font-size: 1em;
+  }
+  .contDiv{
+    font-size: 1em;
+  }
+  li{
+    font-size: 1.2em;
+    padding: 5px;
+  }
+  /* para el characterhtml */
+  #titleChar{
+    font-size: 2.5em;
+  }
+  .filterLabel{
+    font-size: 0.7em;
+  }
+  .houseSelect{
+    width: 90px;
+  }
+  .root2{
+    width: 700px;
+    align-items: center;
+  }
+  .card{
+    height: auto;
+    width: 650px;
+  }
+  .cardDiv {
+    height: auto;
+    width: 550px;
+  }
+  .avatar{
+    height: 130px;
+    width: 130px;
+  }
+  .nameDiv{
+    font-size: 1.5em;
+    
+  }
+  p{
+    font-size: 1em;
+  }
+    /* para el potionshtml */
+    .cardDiv3{
+      width: 450px;
+      padding: 30px 20px;
+      margin: 30px 30px;
+    }
+  /* para el bookshtml */
+    .cardDiv4{
+      height: auto;
+      width: 450px;
+      padding: 10px;
+      margin: 10px 5px;
+    }
+}
+@media (min-width: 821px) and (max-width: 1800px) {
+/* para el menuhtml */
+  h3{
+    font-size: 2em;
+  }
+  .info{
+    font-size: 1.5em;
+  }
+  h4{
+    font-size: 1.5em;
+  }
+  li{
+    font-size: 1.5em;
+    padding: 10px;
+  }
+  footer{
+    font-size: 1.3em;
+  }
+  .root2{
+    width: 1200px;
+    align-items: center;
+  }
+   /* para el characterhtml */
+   .filterLabel{
+    font-size: 1em;
+  }
+  
+  .card{
+    width: 980px;
+  }
+  .cardDiv {
+    height: auto;
+    width: 900px;
+  }
+  .avatar{
+    height: 180px;
+    width: 180px;
+  }
+  .nameDiv{
+    font-size: 2.3em;
+    
+  }
+  p{
+    font-size: 1.3em;
+    line-height: 20px;
+  }
+   /* para el spellshtml */
+   .card2{
+     width: 900px;
+   }
+   .cardDiv2{
+     height: auto;
+     width: 800px;
+    padding: 35px;
+  }
+   /* para el potionshtml */
+   .cardDiv3{
+    padding: 30px 100px;
+    margin: 30px 10px;
+  }
+/* para el bookshtml */
+  .card4{
+  width: 900px;
+  }
+  .cardDiv4{
+    width: 800px;
+    padding: 30px;
+    margin: 30px 10px;
+  }
+  .descriptionDiv{
+    line-height: 25px;
+  }
+}
+@media (min-width: 1900px) and (max-width: 3500px) {
+  /* para el menuhtml */
+  h3{
+    font-size: 3.5em;
+  }
+  .info{
+    font-size: 1.8em;
+  }
+  h4{
+    font-size: 1.8em;
+  }
+  li{
+    font-size: 2em;
+    padding: 16px;
+  }
+  footer{
+    font-size: 1.2em;
+  }
+  .root2{
+    width: 1500px;
+    align-items: center;
+  }
+  /* para el characterhtml */
+  .filterLabel{
+    font-size: 1.1em;
+  }
+  .card{
+    width: 2400px;
+  }
+  .cardDiv{
+    height: auto;
+    width: 1300px;
+  }
+  .avatar{
+    height: 250px;
+    width: 250px;
+  }
+  .nameDiv{
+    font-size: 2.5em;
+  }
+  p{
+    font-size: 1.5em;
+    line-height: 25px;
+  }
+  /* para el spellshtml */
+  .cardDiv2{
+    padding: 40px;
+  }
+   /* para el potionshtml */
+   .cardDiv3{
+    padding: 50px 200px;
+  }
+/* para el bookshtml */
+  .cardDiv4{
+    padding: 50px;
+  }
+  .nameDiv{
+    font-size: 3.8em;
+  }
+}
+
+.descriptionDiv{
+  text-align: justify;
+
+}
+#titleChar,#titleSpells, #titlePot, #title, #titleBooks, .navBar, .root2, .root1, .divFilter{
+  user-select: none;
+}
+
+h4{
+  align-items: center;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}

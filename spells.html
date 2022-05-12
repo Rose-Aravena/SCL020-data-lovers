@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="spells">
+    <div id="titleSpells">Spells</div>
+    <nav class="navBar">
+      <a href="menu.html" class="logo">HP</a>
+      <input type="checkbox" id="toggler">
+      <label for="toggler"><i class="ri-menu-line"></i></label>
+      <div class="navMenu">
+        <ul class="listMenu">
+          <li> <a href="characters.html">Characters</a></li>
+          <li> <a href="spells.html">Spells</a></li>
+          <li> <a href="potions.html">Potions</a></li>
+          <li> <a href="books.html">Books</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="divFilter">
+      <label class="filterLabel">Filter by type</label>
+      <select class="spellsSelect" id="spellsS">
+       <option value=" ">Select type</option>
+       <option value="Charm">Charm</option>
+       <option value="Jinx">Jinx</option>
+       <option value="Transfiguration">Transfiguration</option>
+       <option value="Curse">Curse</option>
+       <option value="Hex">Hex</option>
+       <option value="Conjuration">Conjuration</option>
+     </select>
+    </div>
+    <div class="root2">
+      <div id="cardContainer2" class="card2"></div>
+    </div>
+    <!-- <div class="cursor">
+      <div class="cursor__inner"></div>
+    </div>   -->
+    <footer class="foot3">Author Rose Aravena and Carolina Zapata © 2022 </footer>    
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
