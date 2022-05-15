@@ -62,6 +62,9 @@ para tener un conocimiento general del mundo de HP
 * Comenzamos a trabajar con los test.
 * Tuvimos que anadir el test.enviroment: jsdom de jest para poder testear nuestras funciones createElement.
 * Pudimos hacer todos nuestros test y nos da porcentaje superior a 70.
-* Realizamos el deploy pero nuestro proyecto pierde propiedades, debemos ajustas para después poder hacer project feedback.
+* Realizamos el deploy pero nuestro proyecto pierde propiedades, debemos ajustar para después poder hacer project feedback.
+* Con la ayuda de Mauro logramos hacer que el deploy funcionara y no se perdieran la data ni estilo.
+* Cambiamos todas las variables y funciones al inglés.
+* Nos queda estudiar para el project feedback.
 
 
