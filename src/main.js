@@ -1,6 +1,6 @@
 import data from './data/harrypotter/harry.js';
 
-import { filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, ordenarTexto, createFunfacts} from './data.js';
+import { filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, textOrder, createFunfacts} from './data.js';
 
 
 const alohomoraButton = document.getElementById('alohomoraB');
@@ -25,6 +25,7 @@ if (spellsButton) {
 }
 
 let characters = data.characters;
+
 let spells = data.spells;
 
 let potions = data.potions;
@@ -32,7 +33,6 @@ let potions = data.potions;
 let books = data.books;
 
 let funFacts = data.funFacts;
-
 
 const pathName = window.location.pathname
 
@@ -46,10 +46,8 @@ if(pathName.includes('menu')){
 if(pathName.includes("characters")){
   const cardCharacters= createCharacter(characters);
   const cardContainer = document.getElementById('cardContainer');
-  // console.log(cardCharacters)
   cardContainer.appendChild(cardCharacters)
   filterHouseStart();
-  // alphabetOrder()
 }
 if (pathName.includes("spells")){
   const cardSpells= createSpell(spells);
@@ -75,7 +73,7 @@ houseSelect.addEventListener("change", function () {
   
   const house = houseSelect.options[houseSelect.selectedIndex].text;
   let resultHouse = filterHouse(characters, house);
-  resultHouse = ordenarTexto(resultHouse);
+  resultHouse = textOrder(resultHouse);
 
 
   const cardContainer = document.getElementById('cardContainer');
