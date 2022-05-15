@@ -76,7 +76,7 @@ function createCharacter(characters){
     patronus.textContent = 'Patronus: ' + character.patronus;
     text.appendChild(patronus);
 
-    bookFeatured.textContent = 'Book feature: '+ character.books_featured_in;
+    bookFeatured.textContent = 'Appearances: '+ character.books_featured_in;
     text.appendChild(bookFeatured);
 
     death.textContent = 'Death: '+ character.death;
@@ -234,6 +234,6 @@ function createFunfacts(funFacts){
 return (funfactsCont)
 }
 
-export {filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, textOrder as ordenarTexto, createFunfacts};
+export {filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, textOrder , createFunfacts};
 
 
