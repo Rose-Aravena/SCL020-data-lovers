@@ -629,8 +629,8 @@ width: 140px;
     }
   }
   
-  /* burbujas */
-  .burbuja{
+  /* bubbles */
+  .bubble{
     
     border-radius: 50%;
     background: #F6F54D;
@@ -639,106 +639,106 @@ width: 140px;
     bottom: 0;
     align-items: flex-end;
   
-  animation: burbujas 5s linear infinite ;
+  animation: bubbles 5s linear infinite ;
   }
-  .burbuja:nth-child(1){
+  .bubble:nth-child(1){
     width: 20px;
     height: 30px;
     left: 5%;
     animation-duration: 4s;
   }
-  .burbuja:nth-child(2){
+  .bubble:nth-child(2){
     width: 10px;
     height: 20px;
     left: 10%;
     animation-duration: 4s;
     animation-delay: 5.5s;
   }
-  .burbuja:nth-child(3){
+  .bubble:nth-child(3){
     width: 15px;
     height: 25px;
     left: 15%;
     animation-duration: 4s;
     animation-delay: 2s;
   }
-  .burbuja:nth-child(4){
+  .bubble:nth-child(4){
     width: 10px;
     height: 20px;
     left: 20%;
     animation-duration: 4s;
     animation-delay: 7s;
   }
-  .burbuja:nth-child(5){
+  .bubble:nth-child(5){
     width: 20px;
     height: 30px;
     left: 25%;
     animation-duration: 4s;
     animation-delay: 4s;
   }
-  .burbuja:nth-child(6){
+  .bubble:nth-child(6){
     width: 10px;
     height: 20px;
     left: 30%;
     animation-duration: 4s;
     animation-delay: 3.5s;
   }
-  .burbuja:nth-child(7){
+  .bubble:nth-child(7){
     width: 5px;
     height: 10px;
     left: 35%;
     animation-duration: 4s;
     animation-delay: 4.5s;
   }
-  .burbuja:nth-child(8){
+  .bubble:nth-child(8){
     width: 20px;
     height: 30px;
     left: 65%;
     animation-duration: 4s;
     animation-delay: 5.5s;
   }
-  .burbuja:nth-child(9){
+  .bubble:nth-child(9){
     width: 10px;
     height: 20px;
     left: 70%;
     animation-duration: 4s;
     animation-delay: 2.5s;
   }
-  .burbuja:nth-child(10){
+  .bubble:nth-child(10){
     width: 15px;
     height: 25px;
     left: 75%;
     animation-duration: 4s;
     animation-delay: 4s;
   }
-  .burbuja:nth-child(11){
+  .bubble:nth-child(11){
     width: 25px;
     height: 35px;
     left: 80%;
     animation-duration: 4s;
     animation-delay: 5.2s;
   }
-  .burbuja:nth-child(12){
+  .bubble:nth-child(12){
     width: 10px;
     height: 20px;
     left: 85%;
     animation-duration: 4s;
     animation-delay: 3.5s;
   }
-  .burbuja:nth-child(13){
+  .bubble:nth-child(13){
     width: 20px;
     height: 30px;
     left: 90%;
     animation-duration: 4s;
     animation-delay: 1.5s;
   }
-  .burbuja:nth-child(14){
+  .bubble:nth-child(14){
     width: 15px;
     height: 25px;
     left: 95%;
     animation-duration: 4s;
     
   }
-  @keyframes burbujas{
+  @keyframes bubbles{
     0%{
       bottom: 0;
       opacity: 0;
