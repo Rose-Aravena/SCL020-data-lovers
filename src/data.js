@@ -2,13 +2,6 @@
 function textOrder(characters) {
   characters.sort((a, b) => {
     return a.name.toLowerCase () > b.name.toLowerCase () ? 1 : -1
-    // if (a.name.toLowerCase() > b.name.toLowerCase()){
-    //   return 1;
-    // }
-    // if(a.name.toLowerCase() < b.name.toLowerCase()){
-    //   return -1;
-    // }
-    // // return 0;
   })
   return characters;
  }
@@ -19,7 +12,6 @@ const filterHouse = (characters,house)=>{
 const filterSpells = (spells,spell_type)=>{
  return spells.filter(spell => spell.spell_type === spell_type);
 }
-
 
 function createCharacter(characters){
   const cardContainer = document.createElement('div');
@@ -198,7 +190,7 @@ function createBook(books){
     name.textContent = book.title;
     card4.appendChild(name);
       
-    id.textContent = 'Other Number: ' + book.id;
+    id.textContent = 'Book Number: ' + book.id;
     card4.appendChild(id);
       
     releaseDay.textContent = 'Release Day: ' + book.releaseDay;
