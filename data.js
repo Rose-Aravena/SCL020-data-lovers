@@ -1,14 +1,7 @@
 
-function ordenarTexto(characters) {
+function textOrder(characters) {
   characters.sort((a, b) => {
     return a.name.toLowerCase () > b.name.toLowerCase () ? 1 : -1
-    // if (a.name.toLowerCase() > b.name.toLowerCase()){
-    //   return 1;
-    // }
-    // if(a.name.toLowerCase() < b.name.toLowerCase()){
-    //   return -1;
-    // }
-    // // return 0;
   })
   return characters;
  }
@@ -19,7 +12,6 @@ const filterHouse = (characters,house)=>{
 const filterSpells = (spells,spell_type)=>{
  return spells.filter(spell => spell.spell_type === spell_type);
 }
-
 
 function createCharacter(characters){
   const cardContainer = document.createElement('div');
@@ -84,7 +76,7 @@ function createCharacter(characters){
     patronus.textContent = 'Patronus: ' + character.patronus;
     text.appendChild(patronus);
 
-    bookFeatured.textContent = 'Book feature: '+ character.books_featured_in;
+    bookFeatured.textContent = 'Appearances: '+ character.books_featured_in;
     text.appendChild(bookFeatured);
 
     death.textContent = 'Death: '+ character.death;
@@ -198,7 +190,7 @@ function createBook(books){
     name.textContent = book.title;
     card4.appendChild(name);
       
-    id.textContent = 'Other Number: ' + book.id;
+    id.textContent = 'Book Number: ' + book.id;
     card4.appendChild(id);
       
     releaseDay.textContent = 'Release Day: ' + book.releaseDay;
@@ -242,6 +234,6 @@ function createFunfacts(funFacts){
 return (funfactsCont)
 }
 
-export {filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, ordenarTexto, createFunfacts};
+export {filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, textOrder , createFunfacts};
 
 
