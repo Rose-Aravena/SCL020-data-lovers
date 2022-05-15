@@ -1,6 +1,6 @@
 import data from './data/harrypotter/harry.js';
 
-import { filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, ordenarTexto, createFunfacts} from './data.js';
+import { filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, textOrder, createFunfacts} from './data.js';
 
 
 const alohomoraButton = document.getElementById('alohomoraB');
@@ -25,6 +25,7 @@ if (spellsButton) {
 }
 
 let characters = data.characters;
+
 let spells = data.spells;
 
 let potions = data.potions;
@@ -32,7 +33,6 @@ let potions = data.potions;
 let books = data.books;
 
 let funFacts = data.funFacts;
-
 
 const pathName = window.location.pathname
 
@@ -46,10 +46,8 @@ if(pathName.includes('menu')){
 if(pathName.includes("characters")){
   const cardCharacters= createCharacter(characters);
   const cardContainer = document.getElementById('cardContainer');
-  // console.log(cardCharacters)
   cardContainer.appendChild(cardCharacters)
   filterHouseStart();
-  // alphabetOrder()
 }
 if (pathName.includes("spells")){
   const cardSpells= createSpell(spells);
@@ -75,7 +73,7 @@ houseSelect.addEventListener("change", function () {
   
   const house = houseSelect.options[houseSelect.selectedIndex].text;
   let resultHouse = filterHouse(characters, house);
-  resultHouse = ordenarTexto(resultHouse);
+  resultHouse = textOrder(resultHouse);
 
 
   const cardContainer = document.getElementById('cardContainer');
@@ -124,41 +122,3 @@ spellsSelect.addEventListener("change", function () {
     });
   });
 }
-
-// function alphabetOrder(){
-//   const alphabet = document.getElementById('orden')
-//   alphabet.addEventListener("change", function(){
-//     const order = alphabet.options[alphabet.selectedIndex].text;
-//     // characterFilter = filterHouse(characters, house);
-  
-//     // const ordenar = ordenarTexto(resulHouse);
-//   if(order =='A-Z'){
-//     characterFilter = ordenarTexto(characters)
-//   }else {
-//     characterFilter = ordenarTextoZA(characters)
-//   }
-
-//     const cardContainer = document.getElementById('cardContainer');
-//     cardContainer.innerHTML = '';
-  
-//     characterFilter.forEach(function (character) {
-//       cardContainer.innerHTML +=
-//         `<div class='cardDiv'>
-//           <div class='photo'>
-//             <img class='avatar' src='imagenes/Mago2.png'> </img>
-//           </div>
-//           <div class='textDiv'>
-//             <h2 class='nameDiv'> ${character.name}</h2> 
-//             <p class='birthDiv'> Birth: ${character.birth}</p>
-//             <p class='ancestryDiv'> Ancestry: ${character.ancestry}</p>
-//             <p class='houseDiv'> House: ${character.house}</p>
-//             <p class='wandDiv'> Wand: ${character.wand}</p>
-//             <p class='patronusDiv'>Patronus: ${character.patronus}</p>
-//             <p class='bookFeaturedDiv'>Book feature: ${character.books_featured_in}</p>
-//             <p class='deathDiv'>Death: ${character.death}</p>
-//           </div>
-//         </div>`
-//     });
-//   })}; 
-
-

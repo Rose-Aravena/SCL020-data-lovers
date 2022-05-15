@@ -1,4 +1,5 @@
 
+/* index.html */
 body{
   cursor: url(imagenes/varita.cur),
   auto;
@@ -78,6 +79,11 @@ body{
     background-position: center;
 }
 
+.audio{
+  opacity: 0.1; 
+}
+
+/* menu.html */
 #menu{
     background-image: url('imagenes/MENU.png');
     background-size: cover ;
@@ -112,10 +118,6 @@ body{
   justify-content: center;
 }
 
-.audio{
-  opacity: 0.1; 
-}
-
 p{
   margin: 0.5px;
   padding: 5px;
@@ -128,6 +130,7 @@ padding: 5px;
 font-size: 1.4vw ;
 }
 
+/* characters.html */
 #characters{
   background-image: url('imagenes/VARITAS.jpg');
   background-size: cover ;
@@ -166,7 +169,7 @@ font-size: 1.4vw ;
   margin-top: 1%;
   text-align: center;
 }
-.root2::-webkit-scrollbar{     /* para el acroll*/
+.root2::-webkit-scrollbar{     /* para el scroll*/
   width: 10px;
   
 }
@@ -219,34 +222,6 @@ font-size: 1.4vw ;
 
 }
 
-.menuButton{
-    background-color: rgba(129, 41, 41, 0.653);
-    font-family: 'Hina Mincho', serif;
-    letter-spacing: 2px;
-    /* justify-content: center; */
-    /* flex-flow: row wrap; */
-    display: grid;
-    /* align-content: center;
-    align-items: center; */
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 20px 25px;
-    width: 250px;
-    height: 100px;
-    text-align: center;
-    font-size: 1.8vw;
-    border-radius: 20px;
-    text-shadow: 0 0 5px rgb(255, 195, 66), 0 0 15px rgb(255, 249, 133), 0 0 20px rgb(255, 234, 184), 0 0 40px rgb(255, 251, 239);
-    margin: 20px;
-    border-color: rgba(196, 202, 198, 10%);
-    animation: parpadear 2s infinite ;
-    box-shadow: 0 0 5px #060000;
-  }
-  .menuButton:hover{
-      background: rgba(255, 66, 66, 0.3);
-  }
 .divFilter{
   background-color: rgb(6, 0, 0, 50%);
   height: auto;
@@ -294,6 +269,7 @@ font-size: 1.4vw ;
     font-weight:normal;
   }
 
+/* spells.html */
 #spells{
   background-image: url('imagenes/Clubduelo.webp');
   background-size: cover ;
@@ -337,7 +313,6 @@ font-size: 1.4vw ;
     font-family: 'Hina Mincho', serif;
     display: flex;
     flex-direction: column;
-    /* flex-flow: row wrap; */
     justify-content: center;
     align-items: center;
     color: black;
@@ -355,19 +330,19 @@ font-size: 1.4vw ;
     align-content: center;
 
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px)and(max-width: 479px) {
   .cardDiv2 {
     height: auto;
     width: 40px;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px)and(max-width: 630px) {
   .cardDiv2 {
     height: auto;
     width: 250px;
   }
 }
-@media only screen and (min-width:470px)and(max-width: 768px) {
+@media only screen and (min-width:640px)and(max-width: 750px) {
   .cardDiv2 {
     height: auto;
     width: 450px;
@@ -379,8 +354,6 @@ font-size: 1.4vw ;
     width: 600px;
   }
 }
-
-
 
 .spellsSelect::-ms-expand {
     display: none;
@@ -399,6 +372,7 @@ font-size: 1.4vw ;
     font-weight:normal;
   }
 
+/* potions.html */
 #potions{
     background-image: url('imagenes/saladepociones.jpg');
     background-size: cover;
@@ -442,7 +416,6 @@ font-size: 1.4vw ;
   font-family: 'Hina Mincho', serif;
   display: flex;
   flex-direction: column;
-  /* flex-flow: row wrap; */
   justify-content: center;
   align-items: center;
   color: black;
@@ -460,31 +433,32 @@ font-size: 1.4vw ;
   align-content: center;
 
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px)and(max-width: 479px) {
 .cardDiv3 {
   height: 60px;
   width: 40px;
 }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px)and(max-width: 630px) {
 .cardDiv3 {
   height: 100px;
   width: 80px;
 }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width:640px)and(max-width: 750px) {
 .cardDiv3 {
   height: 140px;
   width: 110px;
 }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width:760px) and (max-width: 1024px) {
 .cardDiv3 {
   height: 170px;
   width: 140px;
 }
 }
 
+/* books.html */
 #books{
   background-image: url('imagenes/kingscross.webp');
   background-size: cover;
@@ -570,7 +544,7 @@ width: 140px;
 }
 }
 
-  /* para la barra de menu */
+/* para la barra de menu */
   .navBar{
     display: flex;
       flex-wrap: wrap;
@@ -629,9 +603,8 @@ width: 140px;
     }
   }
   
-  /* bubbles */
+/* bubbles */
   .bubble{
-    
     border-radius: 50%;
     background: #F6F54D;
     opacity: .3;
