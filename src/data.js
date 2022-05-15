@@ -1,5 +1,5 @@
 
-function ordenarTexto(characters) {
+function textOrder(characters) {
   characters.sort((a, b) => {
     return a.name.toLowerCase () > b.name.toLowerCase () ? 1 : -1
     // if (a.name.toLowerCase() > b.name.toLowerCase()){
@@ -242,6 +242,6 @@ function createFunfacts(funFacts){
 return (funfactsCont)
 }
 
-export {filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, ordenarTexto, createFunfacts};
+export {filterHouse, filterSpells, createCharacter, createSpell, createPotion, createBook, textOrder as ordenarTexto, createFunfacts};
 
 
