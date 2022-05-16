@@ -66,7 +66,6 @@ if (pathName.includes("books")){
   cardContainer4.appendChild(cardBooks)
 }
 
-
 function filterHouseStart(){
 const houseSelect = document.getElementById('houseS')
 houseSelect.addEventListener("change", function () {
@@ -74,7 +73,6 @@ houseSelect.addEventListener("change", function () {
   const house = houseSelect.options[houseSelect.selectedIndex].text;
   let resultHouse = filterHouse(characters, house);
   resultHouse = textOrder(resultHouse);
-
 
   const cardContainer = document.getElementById('cardContainer');
   cardContainer.innerHTML = '';
@@ -87,13 +85,13 @@ houseSelect.addEventListener("change", function () {
         </div>
         <div class='textDiv'>
           <h2 class='nameDiv'> ${character.name}</h2> 
-          <p class='birthDiv'> Birth: ${character.birth}</p>
-          <p class='ancestryDiv'> Ancestry: ${character.ancestry}</p>
-          <p class='houseDiv'> House: ${character.house}</p>
-          <p class='wandDiv'> Wand: ${character.wand}</p>
-          <p class='patronusDiv'>Patronus: ${character.patronus}</p>
-          <p class='bookFeaturedDiv'>Book feature: ${character.books_featured_in}</p>
-          <p class='deathDiv'>Death: ${character.death}</p>
+          <p class='birthDiv'> Birth: ${character?.birth === null ? 'Mistery':character?.birth}</p>
+          <p class='ancestryDiv'> Ancestry: ${character?.ancestry === null ? 'Mistery':character?.ancestry}</p>
+          <p class='houseDiv'> House: ${character?.house === null ? 'Mistery':character?.house}</p>
+          <p class='wandDiv'> Wand: ${character?.wand === null ? 'Mistery':character?.wand}</p>
+          <p class='patronusDiv'>Patronus: ${character?.patronus === null ? 'Mistery':character?.patronus}</p>
+          <p class='bookFeaturedDiv'>Appearances: ${character?.books_featured_in === null ? 'Mistery':character?.books_featured_in}</p>
+          <p class='deathDiv'>Death: ${character?.death === null ? 'Mistery':character?.death}</p>
         </div>
       </div>`
   });
@@ -114,10 +112,10 @@ spellsSelect.addEventListener("change", function () {
       cardContainer2.innerHTML +=
         `<div class='cardDiv2'>
             <h2 class='nameDiv'> ${spell.name}</h2> 
-               <p class='othernameDiv'> Name: ${spell.other_name}</p>
-               <p class='pronunciationDiv'> Pronunciation: ${spell.pronunciation}</p>
-               <p class='spelltypeDiv'> Type: ${spell.spell_type}</p>
-               <p class='descriptionDiv'>Description: ${spell.description}</p>
+               <p class='othernameDiv'> Name: ${spell?.other_name === null ? 'Mistery':spell?.other_name}</p>
+               <p class='pronunciationDiv'> Pronunciation: ${spell?.pronunciation === null ? 'Mistery':spell?.pronunciation}</p>
+               <p class='spelltypeDiv'> Type: ${spell?.spell_type === null ? 'Mistery':spell?.spell_type}</p>
+               <p class='descriptionDiv'>Description: ${spell?.description === null ? 'Mistery':spell?.description}</p>
           </div>`
     });
   });

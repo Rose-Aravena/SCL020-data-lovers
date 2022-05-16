@@ -61,25 +61,25 @@ function createCharacter(characters){
     name.textContent = character.name;
     text.appendChild(name);
 
-    birth.textContent = 'Birth: ' + character.birth;
+    birth.textContent = `Birth: ${character?.birth === null ? 'Mistery':character?.birth}`;
     text.appendChild(birth);
 
-    ancestry.textContent = 'Ancestry: ' + character.ancestry;
+    ancestry.textContent = `Ancestry: ${character?.ancestry === null ? 'Mistery':character?.ancestry}`;
     text.appendChild(ancestry);
     
-    house.textContent = 'House: ' + character.house;
+    house.textContent = `House: ${character?.house === null ? 'Mistery':character?.house}`;
     text.appendChild(house);
 
-    wand.textContent = 'Wand: ' + character.wand;
+    wand.textContent = `Wand: ${character?.wand === null ? 'Mistery':character?.wand}`;
     text.appendChild(wand);
 
-    patronus.textContent = 'Patronus: ' + character.patronus;
+    patronus.textContent = `Patronus: ${character?.patronus === null ? 'Mistery':character?.patronus}`;
     text.appendChild(patronus);
 
-    bookFeatured.textContent = 'Appearances: '+ character.books_featured_in;
+    bookFeatured.textContent = `Appearances: ${character?.books_featured_in === null ? 'Mistery':character?.books_featured_in}`;
     text.appendChild(bookFeatured);
 
-    death.textContent = 'Death: '+ character.death;
+    death.textContent = `Death: ${character?.death === null ? 'Mistery':character?.death}`;
     text.appendChild(death);
 
     card.appendChild(cardPhoto);
@@ -121,16 +121,16 @@ function createSpell(spells){
   name.textContent = spell.name;
   card2.appendChild(name);
 
-  other_name.textContent = 'Other Name: ' + spell.other_name;
+  other_name.textContent = `Other Name: ${spell?.other_name === null ? 'Mistery':spell?.other_name}`;
   card2.appendChild(other_name);
 
-  pronunciation.textContent = 'Pronunciation: ' + spell.pronunciation;
+  pronunciation.textContent = `Pronunciation: ${spell?.pronunciation === null ? 'Mistery':spell?.pronunciation}`;
   card2.appendChild(pronunciation);
 
-  type.textContent = 'Type: ' + spell.spell_type;
+  type.textContent = `Type: ${spell?.spell_type === null ? 'Mistery':spell?.spell_type}`;
   card2.appendChild(type);
 
-  description.textContent = 'Description: ' + spell.description;
+  description.textContent = `Description: ${spell?.description === null ? 'Mistery':spell?.description}`;
   card2.appendChild(description);
 
   cardContainer2.appendChild(card2);
@@ -156,7 +156,7 @@ function createPotion(potions){
   name.textContent = potion.name;
   card3.appendChild(name);
   
-  description.textContent = 'Description: ' + potion.description;
+  description.textContent = `Description: ${potion?.description === "Unknown" ? 'Mistery':potion?.description}`;
   card3.appendChild(description);
   
   cardContainer3.appendChild(card3);
