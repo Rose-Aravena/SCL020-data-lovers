@@ -85,13 +85,13 @@ houseSelect.addEventListener("change", function () {
         </div>
         <div class='textDiv'>
           <h2 class='nameDiv'> ${character.name}</h2> 
-          <p class='birthDiv'> Birth: ${character?.birth === null ? 'Mistery':character?.birth}</p>
-          <p class='ancestryDiv'> Ancestry: ${character?.ancestry === null ? 'Mistery':character?.ancestry}</p>
-          <p class='houseDiv'> House: ${character?.house === null ? 'Mistery':character?.house}</p>
-          <p class='wandDiv'> Wand: ${character?.wand === null ? 'Mistery':character?.wand}</p>
-          <p class='patronusDiv'>Patronus: ${character?.patronus === null ? 'Mistery':character?.patronus}</p>
-          <p class='bookFeaturedDiv'>Appearances: ${character?.books_featured_in === null ? 'Mistery':character?.books_featured_in}</p>
-          <p class='deathDiv'>Death: ${character?.death === null ? 'Mistery':character?.death}</p>
+          <p class='birthDiv'> Birth: ${character.birth == null ? 'Mistery':character.birth}</p>
+          <p class='ancestryDiv'> Ancestry: ${character.ancestry == null ? 'Mistery':character.ancestry}</p>
+          <p class='houseDiv'> House: ${character.house == null ? 'Mistery':character.house}</p>
+          <p class='wandDiv'> Wand: ${character.wand == null ? 'Mistery':character.wand}</p>
+          <p class='patronusDiv'>Patronus: ${character.patronus == null ? 'Mistery':character.patronus}</p>
+          <p class='bookFeaturedDiv'>Appearances: ${character.books_featured_in == null ? 'Mistery':character.books_featured_in}</p>
+          <p class='deathDiv'>Death: ${character.death == null ? 'Mistery':character.death}</p>
         </div>
       </div>`
   });
@@ -112,10 +112,10 @@ spellsSelect.addEventListener("change", function () {
       cardContainer2.innerHTML +=
         `<div class='cardDiv2'>
             <h2 class='nameDiv'> ${spell.name}</h2> 
-               <p class='othernameDiv'> Name: ${spell?.other_name === null ? 'Mistery':spell?.other_name}</p>
-               <p class='pronunciationDiv'> Pronunciation: ${spell?.pronunciation === null ? 'Mistery':spell?.pronunciation}</p>
-               <p class='spelltypeDiv'> Type: ${spell?.spell_type === null ? 'Mistery':spell?.spell_type}</p>
-               <p class='descriptionDiv'>Description: ${spell?.description === null ? 'Mistery':spell?.description}</p>
+               <p class='othernameDiv'> Name: ${spell.other_name == null ? 'Mistery':spell.other_name}</p>
+               <p class='pronunciationDiv'> Pronunciation: ${spell.pronunciation == null ? 'Mistery':spell.pronunciation}</p>
+               <p class='spelltypeDiv'> Type: ${spell.spell_type == null ? 'Mistery':spell.spell_type}</p>
+               <p class='descriptionDiv'>Description: ${spell.description == null ? 'Mistery':spell.description}</p>
           </div>`
     });
   });
