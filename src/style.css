@@ -55,6 +55,7 @@ body{
     font-family: 'Hina Mincho', serif;
     letter-spacing: 0.4vh;
     display: flex;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1.5vh;
@@ -819,7 +820,7 @@ width: 140px;
     font-size: 1.1em;
   }
   .info{
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
   /* para los titulos*/
   #titleChar,#titleSpells, #titlePot, #title, #titleBooks{
@@ -827,18 +828,21 @@ width: 140px;
   }
   /* para characters*/
   .filterLabel{
-    font-size: 0.5em;
+    margin-left: 50%;
+    font-size: 0.7em;
   }
-  .houseSelect{
-    width: 50px;
+  .houseSelect, .spellsSelect{
+    width: 70px;
+    font-size: 0.6em;
   }
   .root2{
     width: 330px;
   }
-  .cardDiv {
+  .cardDiv, .cardDiv2 {
     flex-direction: column;
     height: auto;
     width: 260px;
+    padding: 15px;
   }
   .avatar{
     height: 60px;
@@ -864,6 +868,19 @@ width: 140px;
     width: 250px;
     padding: 10px;
     margin: 10px 5px;
+  }
+  div .text{
+    display: flex;
+    margin-top: 25px;
+    font-size: 38px;
+  }
+  .alohomoraButton{
+    width: 180px;
+    height: 35px;
+    font-size: 18px;
+  }
+  .logo{
+    font-size: 0.9em;
   }
 }
 @media (min-width: 479px)  and (max-width: 820px) {
