@@ -27,6 +27,9 @@ para profundizar mas en el mundo de HP
 quiero datos que salen en los libros
 para tener un conocimiento general del mundo de HP
 
+## DESCRIPCIÓN DE PRODUCTO
+* Crearemos una web de Harry potter que sea amigable y que de a loa usuarios una experiencia inmersiva desde el primer momento en que ingresa. Aquí podrá encontrar toda la información que necesite de la saga.
+
 ## DIAGRAMA DE FLUJO
 
 <img src = "DATA LOVERS.drawio.png">
@@ -61,10 +64,17 @@ para tener un conocimiento general del mundo de HP
 * Añadimos orden alfabético para la data.
 * Comenzamos a trabajar con los test.
 * Tuvimos que anadir el test.enviroment: jsdom de jest para poder testear nuestras funciones createElement.
+* Hubo un problema con test.enviroment ya que había que actualizar la versión de 'engines' en jest.
 * Pudimos hacer todos nuestros test y nos da porcentaje superior a 70.
 * Realizamos el deploy pero nuestro proyecto pierde propiedades, debemos ajustar para después poder hacer project feedback.
 * Con la ayuda de Mauro logramos hacer que el deploy funcionara y no se perdieran la data ni estilo.
 * Cambiamos todas las variables y funciones al inglés.
+* Queríamos hacer que no aparecieran los 'null' en la data así que con el uso de ternarios y la ayuda de Dani y Domi, pudimos dejarlo como 'mistery', lo que es más acorde y no rompe toda la estética.
+* Al añadir lo anterior, nuestros test bajaron a 53,84% en covertura de branch.
+* Con la ayuda de Mauro logramos añadir más pruebas para que las nuevas branch estuvieran cubiertas para todos los casos y llegamos al 100% en test.
 * Nos queda estudiar para el project feedback.
 
+## TEST
+
+<img src = "test100.png">
 
