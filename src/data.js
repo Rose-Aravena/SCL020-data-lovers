@@ -212,7 +212,8 @@ function createFunfacts(funFacts){
   const funfactsCont = document.createElement('div');
   funfactsCont.classList.add('cont');
   funFacts.splice(0, 3);
-  funFacts.forEach(function (funFacts) {
+  
+  funFacts.forEach(function (facts) {
 
     const cont = document.createElement('div');
     cont.classList.add('contDiv');
@@ -223,10 +224,10 @@ function createFunfacts(funFacts){
     const content = document.createElement('p');
     content.classList.add('contentDiv');
 
-    type.textContent = '• ' + funFacts.type + ':';
+    type.textContent = '• ' + facts.type + ':';
     cont.appendChild(type);
 
-    content.textContent = funFacts.content;
+    content.textContent = facts.content;
     cont.appendChild(content);
 
     funfactsCont.appendChild(cont);
