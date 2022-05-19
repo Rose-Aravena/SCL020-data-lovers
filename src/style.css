@@ -235,7 +235,7 @@ font-size: 1.4vw ;
 .filterLabel{
     color: white;
     font-size: 1vw;
-    margin-left: 65%;
+    margin-left: 60%;
     line-height: 1.3;
 }
 .houseSelect, .spellsSelect, .potionsSelect, .booksSelect{
@@ -774,6 +774,21 @@ width: 140px;
   justify-content: center;
 }
 
+.clear{
+  text-decoration: none;
+  font-size: 1vw;
+  font-family: 'Hina Mincho', serif;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  width: 400px;
+  border: 1px solid rgba(201, 2, 2, 0.769);
+  border-radius: .3em;
+  background-color: #fff; 
+  padding: 1px 15px;
+  margin-left: 20px;
+}
+
 @media only screen and (max-width: 320px) {
   .cardDiv, .cardDiv4, .cardDiv3, .cardDiv2{
     flex-direction: column;
@@ -828,11 +843,11 @@ width: 140px;
   }
   /* para characters*/
   .filterLabel{
-    margin-left: 50%;
+    margin-left: 30%;
     font-size: 0.7em;
   }
-  .houseSelect, .spellsSelect{
-    width: 70px;
+  .houseSelect, .spellsSelect, .clear{
+    width: 75px;
     font-size: 0.6em;
   }
   .root2{
